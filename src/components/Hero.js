@@ -48,12 +48,24 @@ const HeroContent = styled.section`
   div {
     text-align: center;
   }
+  @media (max-width: ${props => props.theme.phone}) {
+    h1 {
+      font-size: 3rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
 `;
 
 const Avatar = styled(Img)`
   border-radius: 50%;
   border: 2px solid ${props => props.theme.fontHeading};
   margin-bottom: 20px;
+  @media (max-width: ${props => props.theme.phone}) {
+    width: 130px !important;
+    height: 130px !important;
+  }
 `;
 
 const More = styled(moreAnimation)`

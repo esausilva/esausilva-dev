@@ -6,4 +6,5 @@ export const theme = {
   fontHeading: '#9D9587',
   border: '#D8D8D8',
   hoverOne: '#E2E2E2',
+  phone: '767px',
 };
