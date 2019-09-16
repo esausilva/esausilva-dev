@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
         <GlobalStyles />
         <SEO title="Esau Silva" />
         <Hero />
-        <main>{children}</main>
+        <main id="main-content">{children}</main>
         <footer></footer>
       </>
     </ThemeProvider>

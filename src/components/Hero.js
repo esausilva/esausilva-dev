@@ -1,8 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import posed from 'react-pose';
+import Typing from 'react-typing-animation';
+import { useStaticQuery, graphql } from 'gatsby';
+import { Link } from 'react-scroll';
 
+/**
+ * Animations
+ */
+const moreAnimation = posed.div({
+  hoverable: true,
+  pressable: true,
+  init: { scale: 1 },
+  hover: { scale: 1.2 },
+  press: { scale: 1.1 },
+});
+
+/**
+ * Styled Components
+ */
 const Header = styled.header`
   height: 100vh;
   position: relative;
@@ -28,6 +45,9 @@ const HeroContent = styled.section`
     color: ${props => props.theme.fontHeading};
     font-size: 2.8rem;
   }
+  div {
+    text-align: center;
+  }
 `;
 
 const Avatar = styled(Img)`
@@ -36,10 +56,17 @@ const Avatar = styled(Img)`
   margin-bottom: 20px;
 `;
 
-const More = styled.img`
+const More = styled(moreAnimation)`
   margin-top: 40px;
+  cursor: pointer;
+  img {
+    margin: 0;
+  }
 `;
 
+/**
+ * Component
+ */
 const Hero = () => {
   const images = useStaticQuery(graphql`
     query {
@@ -64,12 +91,18 @@ const Hero = () => {
     <Header>
       <HeroContent>
         <Avatar fixed={images.avatar.childImageSharp.fixed} />
-        <h1>Hello there! I’m Esau Silva</h1>
-        <h2>
-          Full-Stack Software Engineer <br />
-          Brazilian Jiu-Jitsu practitioner
-        </h2>
-        <More src={images.more.childImageSharp.resize.src} />
+        <Typing speed={40}>
+          <h1>Hello there! I’m Esau Silva</h1>
+          <h2>
+            Full-Stack Software Engineer <br />
+            Brazilian Jiu-Jitsu Practitioner
+          </h2>
+        </Typing>
+        <More>
+          <Link to="main-content" spy={true} smooth={true} duration={500}>
+            <img src={images.more.childImageSharp.resize.src} />
+          </Link>
+        </More>
       </HeroContent>
     </Header>
   );
