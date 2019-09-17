@@ -102,7 +102,10 @@ const Hero = () => {
   return (
     <Header>
       <HeroContent>
-        <Avatar fixed={images.avatar.childImageSharp.fixed} />
+        <Avatar
+          fixed={images.avatar.childImageSharp.fixed}
+          alt="Esau Silva Photo"
+        />
         <Typing speed={40}>
           <h1>Hello there! I’m Esau Silva</h1>
           <h2>
@@ -111,8 +114,8 @@ const Hero = () => {
           </h2>
         </Typing>
         <More>
-          <Link to="main-content" spy={true} smooth={true} duration={500}>
-            <img src={images.more.childImageSharp.resize.src} />
+          <Link to="navigation" spy={true} smooth={true} duration={600}>
+            <img src={images.more.childImageSharp.resize.src} alt="See More" />
           </Link>
         </More>
       </HeroContent>

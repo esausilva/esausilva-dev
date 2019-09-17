@@ -13,6 +13,7 @@ import { theme } from './styles/theme';
 import { GlobalStyles } from './styles/globalStyles';
 import SEO from './SEO';
 import Hero from './Hero';
+import Navigation from './Navigation';
 
 const Layout = ({ children }) => {
   return (
@@ -21,7 +22,8 @@ const Layout = ({ children }) => {
         <GlobalStyles />
         <SEO title="Esau Silva" />
         <Hero />
-        <main id="main-content">{children}</main>
+        <Navigation />
+        <main>{children}</main>
         <footer></footer>
       </>
     </ThemeProvider>
