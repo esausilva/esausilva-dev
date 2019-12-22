@@ -76,6 +76,7 @@ const Menu = styled.ul`
     }
     a {
       color: #fff;
+      text-decoration: none;
     }
   }
   @media (max-width: ${props => props.theme.phone}) {
@@ -133,34 +134,64 @@ const Navigation = () => {
         <CloseMenu onClick={toggleMenu}>&times;</CloseMenu>
         <Menu>
           <li>
-            <Link to="nav-about" spy={true} smooth={true} duration={600}>
+            <Link
+              to="nav-about"
+              spy={true}
+              smooth={true}
+              duration={600}
+              offset={-80}
+            >
               about
             </Link>
           </li>
           <li>
-            <Link to="nav-portfolio" spy={true} smooth={true} duration={600}>
+            <Link
+              to="nav-portfolio"
+              spy={true}
+              smooth={true}
+              duration={600}
+              offset={-80}
+            >
               portfolio
             </Link>
           </li>
           <li>
-            <Link to="nav-wip" spy={true} smooth={true} duration={600}>
+            <Link
+              to="nav-wip"
+              spy={true}
+              smooth={true}
+              duration={600}
+              offset={-80}
+            >
               wip
             </Link>
           </li>
           <li>
-            <Link to="nav-oss" spy={true} smooth={true} duration={600}>
+            <Link
+              to="nav-oss"
+              spy={true}
+              smooth={true}
+              duration={600}
+              offset={-80}
+            >
               open source
             </Link>
           </li>
           <li>
-            <Link to="nav-blog" spy={true} smooth={true} duration={600}>
+            <Link
+              to="nav-blog"
+              spy={true}
+              smooth={true}
+              duration={600}
+              offset={-80}
+            >
               blog
             </Link>
           </li>
           <li>
-            <Link to="nav-experience" spy={true} smooth={true} duration={600}>
+            <a href="https://www.linkedin.com/in/esausilva/" target="_blank">
               experience
-            </Link>
+            </a>
           </li>
         </Menu>
       </MenuWrapper>

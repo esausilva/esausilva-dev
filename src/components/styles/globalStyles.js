@@ -39,4 +39,9 @@ export const GlobalStyles = createGlobalStyle`
       color: ${lighten(0.5, theme.fontMain)}
     }
   }
+  @media (max-width: ${theme.phone}) {
+    body {
+      font-size: 1.8rem;
+    }
+  }
 `;

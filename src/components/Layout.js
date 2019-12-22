@@ -7,13 +7,32 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 
 import { theme } from './styles/theme';
 import { GlobalStyles } from './styles/globalStyles';
 import SEO from './SEO';
 import Hero from './Hero';
 import Navigation from './Navigation';
+
+const Main = styled.main`
+  display: grid;
+  grid-template-columns: ${props => props.theme.mainLayout};
+  & > * {
+    grid-column: 2 / -2;
+  }
+  h1 {
+    color: ${props => props.theme.fontHeading};
+    text-transform: lowercase;
+    margin: 0;
+    font-weight: 300;
+  }
+  @media (max-width: ${props => props.theme.phone}) {
+    h1 {
+      font-size: 3.8rem;
+    }
+  }
+`;
 
 const Layout = ({ children }) => {
   return (
@@ -23,7 +42,7 @@ const Layout = ({ children }) => {
         <SEO title="Esau Silva" />
         <Hero />
         <Navigation />
-        <main>{children}</main>
+        <Main>{children}</Main>
         <footer></footer>
       </>
     </ThemeProvider>

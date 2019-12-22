@@ -1,118 +1,19 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
+import About from '../components/About';
+import Portfolio from '../components/Portfolio';
+import WorkInProgress from '../components/WorkInProgress';
+import OpenSource from '../components/OpenSource';
+import Blog from '../components/Blog';
 
 const IndexPage = () => (
   <Layout>
-    <p>
-      Start Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-      ultricies, lorem ut suscipit laoreet, nulla nibh consequat diam, in ornare
-      dui lorem id lectus. Proin varius elit mollis nisl molestie bibendum.
-      Phasellus eu turpis at dui interdum volutpat. Ut mollis quam condimentum
-      enim pulvinar, ac fermentum lectus fringilla. Praesent mauris nulla,
-      commodo in cursus condimentum, lobortis in mi. Vivamus at ex porttitor,
-      tincidunt diam at, efficitur orci. Morbi pulvinar rutrum orci quis dictum.
-    </p>
-    <p>Some text</p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies,
-      lorem ut suscipit laoreet, nulla nibh consequat diam, in ornare dui lorem
-      id lectus. Proin varius elit mollis nisl molestie bibendum. Phasellus eu
-      turpis at dui interdum volutpat. Ut mollis quam condimentum enim pulvinar,
-      ac fermentum lectus fringilla. Praesent mauris nulla, commodo in cursus
-      condimentum, lobortis in mi. Vivamus at ex porttitor, tincidunt diam at,
-      efficitur orci. Morbi pulvinar rutrum orci quis dictum.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies,
-      lorem ut suscipit laoreet, nulla nibh consequat diam, in ornare dui lorem
-      id lectus. Proin varius elit mollis nisl molestie bibendum. Phasellus eu
-      turpis at dui interdum volutpat. Ut mollis quam condimentum enim pulvinar,
-      ac fermentum lectus fringilla. Praesent mauris nulla, commodo in cursus
-      condimentum, lobortis in mi. Vivamus at ex porttitor, tincidunt diam at,
-      efficitur orci. Morbi pulvinar rutrum orci quis dictum.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies,
-      lorem ut suscipit laoreet, nulla nibh consequat diam, in ornare dui lorem
-      id lectus. Proin varius elit mollis nisl molestie bibendum. Phasellus eu
-      turpis at dui interdum volutpat. Ut mollis quam condimentum enim pulvinar,
-      ac fermentum lectus fringilla. Praesent mauris nulla, commodo in cursus
-      condimentum, lobortis in mi. Vivamus at ex porttitor, tincidunt diam at,
-      efficitur orci. Morbi pulvinar rutrum orci quis dictum.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies,
-      lorem ut suscipit laoreet, nulla nibh consequat diam, in ornare dui lorem
-      id lectus. Proin varius elit mollis nisl molestie bibendum. Phasellus eu
-      turpis at dui interdum volutpat. Ut mollis quam condimentum enim pulvinar,
-      ac fermentum lectus fringilla. Praesent mauris nulla, commodo in cursus
-      condimentum, lobortis in mi. Vivamus at ex porttitor, tincidunt diam at,
-      efficitur orci. Morbi pulvinar rutrum orci quis dictum.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies,
-      lorem ut suscipit laoreet, nulla nibh consequat diam, in ornare dui lorem
-      id lectus. Proin varius elit mollis nisl molestie bibendum. Phasellus eu
-      turpis at dui interdum volutpat. Ut mollis quam condimentum enim pulvinar,
-      ac fermentum lectus fringilla. Praesent mauris nulla, commodo in cursus
-      condimentum, lobortis in mi. Vivamus at ex porttitor, tincidunt diam at,
-      efficitur orci. Morbi pulvinar rutrum orci quis dictum.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies,
-      lorem ut suscipit laoreet, nulla nibh consequat diam, in ornare dui lorem
-      id lectus. Proin varius elit mollis nisl molestie bibendum. Phasellus eu
-      turpis at dui interdum volutpat. Ut mollis quam condimentum enim pulvinar,
-      ac fermentum lectus fringilla. Praesent mauris nulla, commodo in cursus
-      condimentum, lobortis in mi. Vivamus at ex porttitor, tincidunt diam at,
-      efficitur orci. Morbi pulvinar rutrum orci quis dictum.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies,
-      lorem ut suscipit laoreet, nulla nibh consequat diam, in ornare dui lorem
-      id lectus. Proin varius elit mollis nisl molestie bibendum. Phasellus eu
-      turpis at dui interdum volutpat. Ut mollis quam condimentum enim pulvinar,
-      ac fermentum lectus fringilla. Praesent mauris nulla, commodo in cursus
-      condimentum, lobortis in mi. Vivamus at ex porttitor, tincidunt diam at,
-      efficitur orci. Morbi pulvinar rutrum orci quis dictum.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies,
-      lorem ut suscipit laoreet, nulla nibh consequat diam, in ornare dui lorem
-      id lectus. Proin varius elit mollis nisl molestie bibendum. Phasellus eu
-      turpis at dui interdum volutpat. Ut mollis quam condimentum enim pulvinar,
-      ac fermentum lectus fringilla. Praesent mauris nulla, commodo in cursus
-      condimentum, lobortis in mi. Vivamus at ex porttitor, tincidunt diam at,
-      efficitur orci. Morbi pulvinar rutrum orci quis dictum.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies,
-      lorem ut suscipit laoreet, nulla nibh consequat diam, in ornare dui lorem
-      id lectus. Proin varius elit mollis nisl molestie bibendum. Phasellus eu
-      turpis at dui interdum volutpat. Ut mollis quam condimentum enim pulvinar,
-      ac fermentum lectus fringilla. Praesent mauris nulla, commodo in cursus
-      condimentum, lobortis in mi. Vivamus at ex porttitor, tincidunt diam at,
-      efficitur orci. Morbi pulvinar rutrum orci quis dictum.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies,
-      lorem ut suscipit laoreet, nulla nibh consequat diam, in ornare dui lorem
-      id lectus. Proin varius elit mollis nisl molestie bibendum. Phasellus eu
-      turpis at dui interdum volutpat. Ut mollis quam condimentum enim pulvinar,
-      ac fermentum lectus fringilla. Praesent mauris nulla, commodo in cursus
-      condimentum, lobortis in mi. Vivamus at ex porttitor, tincidunt diam at,
-      efficitur orci. Morbi pulvinar rutrum orci quis dictum.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies,
-      lorem ut suscipit laoreet, nulla nibh consequat diam, in ornare dui lorem
-      id lectus. Proin varius elit mollis nisl molestie bibendum. Phasellus eu
-      turpis at dui interdum volutpat. Ut mollis quam condimentum enim pulvinar,
-      ac fermentum lectus fringilla. Praesent mauris nulla, commodo in cursus
-      condimentum, lobortis in mi. Vivamus at ex porttitor, tincidunt diam at,
-      efficitur orci. Morbi pulvinar rutrum orci quis dictum.
-    </p>
+    <About />
+    <Portfolio />
+    <WorkInProgress />
+    <OpenSource />
+    <Blog />
   </Layout>
 );
 
