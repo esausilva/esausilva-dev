@@ -79,10 +79,6 @@ const Menu = styled.ul`
     }
   }
   @media (max-width: ${props => props.theme.phone}) {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
     height: 100%;
     align-items: center;
     justify-content: space-around;
