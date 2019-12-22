@@ -50,10 +50,10 @@ const HeroContent = styled.section`
   }
   @media (max-width: ${props => props.theme.phone}) {
     h1 {
-      font-size: 3rem;
+      font-size: 2.9rem;
     }
     h2 {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
     }
   }
 `;
