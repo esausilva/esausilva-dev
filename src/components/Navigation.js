@@ -110,6 +110,32 @@ const menuOpenStyle = {
 };
 
 /**
+ * Helpers
+ */
+const menuItems = [
+  {
+    text: 'about',
+    linkTo: 'nav-about',
+  },
+  {
+    text: 'portfolio',
+    linkTo: 'nav-portfolio',
+  },
+  {
+    text: 'wip',
+    linkTo: 'nav-wip',
+  },
+  {
+    text: 'open source',
+    linkTo: 'nav-oss',
+  },
+  {
+    text: 'blog',
+    linkTo: 'nav-blog',
+  },
+];
+
+/**
  * Component
  */
 const Navigation = () => {
@@ -133,63 +159,26 @@ const Navigation = () => {
       <MenuWrapper style={isOpenMenu ? menuOpenStyle : null}>
         <CloseMenu onClick={toggleMenu}>&times;</CloseMenu>
         <Menu>
+          {menuItems.map(item => (
+            <li>
+              <Link
+                to={item.linkTo}
+                spy={true}
+                smooth={true}
+                duration={600}
+                offset={-80}
+                onClick={() => setIsOpenMenu(false)}
+              >
+                {item.text}
+              </Link>
+            </li>
+          ))}
           <li>
-            <Link
-              to="nav-about"
-              spy={true}
-              smooth={true}
-              duration={600}
-              offset={-80}
+            <a
+              href="https://www.linkedin.com/in/esausilva/"
+              target="_blank"
+              rel="noreferrer"
             >
-              about
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="nav-portfolio"
-              spy={true}
-              smooth={true}
-              duration={600}
-              offset={-80}
-            >
-              portfolio
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="nav-wip"
-              spy={true}
-              smooth={true}
-              duration={600}
-              offset={-80}
-            >
-              wip
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="nav-oss"
-              spy={true}
-              smooth={true}
-              duration={600}
-              offset={-80}
-            >
-              open source
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="nav-blog"
-              spy={true}
-              smooth={true}
-              duration={600}
-              offset={-80}
-            >
-              blog
-            </Link>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/esausilva/" target="_blank">
               experience
             </a>
           </li>

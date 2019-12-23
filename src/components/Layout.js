@@ -15,6 +15,9 @@ import SEO from './SEO';
 import Hero from './Hero';
 import Navigation from './Navigation';
 
+/**
+ * Styled Components
+ */
 const Main = styled.main`
   display: grid;
   grid-template-columns: ${props => props.theme.mainLayout};
@@ -34,6 +37,9 @@ const Main = styled.main`
   }
 `;
 
+/**
+ * Component
+ */
 const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
