@@ -2,6 +2,7 @@ export const theme = {
   primaryBg: '#0E1527',
   secondaryBg: '#0E1527',
   headingBg: '#F5F5F5',
+  footerBg: '#333333',
   accent: '#18607B',
   fontMain: '#333333',
   fontHeading: '#9D9587',

@@ -14,6 +14,7 @@ import { GlobalStyles } from './styles/globalStyles';
 import SEO from './SEO';
 import Hero from './Hero';
 import Navigation from './Navigation';
+import Footer from '../components/Footer';
 
 /**
  * Styled Components
@@ -49,7 +50,7 @@ const Layout = ({ children }) => {
         <Hero />
         <Navigation />
         <Main>{children}</Main>
-        <footer></footer>
+        <Footer />
       </>
     </ThemeProvider>
   );
