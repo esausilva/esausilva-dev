@@ -15,6 +15,7 @@ const Nav = styled.nav`
   background: ${props => props.theme.primaryBg};
   height: 90px;
   padding: 30px;
+  z-index: 1;
 `;
 
 const NameButton = styled.button`
@@ -160,7 +161,7 @@ const Navigation = () => {
         <CloseMenu onClick={toggleMenu}>&times;</CloseMenu>
         <Menu>
           {menuItems.map(item => (
-            <li>
+            <li key={item.text}>
               <Link
                 to={item.linkTo}
                 spy={true}
@@ -177,7 +178,7 @@ const Navigation = () => {
             <a
               href="https://www.linkedin.com/in/esausilva/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               experience
             </a>

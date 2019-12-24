@@ -41,12 +41,12 @@ const Footer = () => {
   return (
     <FooterStyle>
       <section>
-        <span>Follow me</span>
+        <span>Let's get connected</span>
         <SocialIcons>
           <a
             href="https://twitter.com/_esausilva"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             title="Twitter"
           >
             <FontAwesomeIcon icon={faTwitter} />
@@ -54,7 +54,7 @@ const Footer = () => {
           <a
             href="https://github.com/esausilva"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             title="GitHub"
           >
             <FontAwesomeIcon icon={faGithub} />
@@ -62,7 +62,7 @@ const Footer = () => {
           <a
             href="https://www.linkedin.com/in/esausilva/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             title="LinkedIn"
           >
             <FontAwesomeIcon icon={faLinkedin} />
@@ -70,7 +70,7 @@ const Footer = () => {
           <a
             href="https://esausilva.com"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             title="Personal Blog"
           >
             <FontAwesomeIcon icon={faBlog} />
