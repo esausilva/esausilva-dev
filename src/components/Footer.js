@@ -5,6 +5,7 @@ import {
   faTwitter,
   faGithub,
   faLinkedin,
+  faMediumM,
 } from '@fortawesome/free-brands-svg-icons';
 import { faBlog } from '@fortawesome/free-solid-svg-icons';
 
@@ -74,6 +75,14 @@ const Footer = () => {
             title="Personal Blog"
           >
             <FontAwesomeIcon icon={faBlog} />
+          </a>
+          <a
+            href="https://medium.com/@_esausilva"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Medium"
+          >
+            <FontAwesomeIcon icon={faMediumM} />
           </a>
         </SocialIcons>
       </section>

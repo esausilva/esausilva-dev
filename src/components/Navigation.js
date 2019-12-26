@@ -15,7 +15,7 @@ const Nav = styled.nav`
   background: ${props => props.theme.primaryBg};
   height: 90px;
   padding: 30px;
-  z-index: 1;
+  z-index: 3;
 `;
 
 const NameButton = styled.button`

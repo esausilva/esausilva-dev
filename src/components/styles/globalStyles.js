@@ -43,5 +43,8 @@ export const GlobalStyles = createGlobalStyle`
     body {
       font-size: 1.8rem;
     }
+    p, h2 {
+      text-align: center;
+    }
   }
 `;

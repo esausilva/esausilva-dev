@@ -3,6 +3,12 @@ import styled from 'styled-components';
 
 import ImgFixed from './ImgFixed';
 import { HeadingWrapper } from './styles/HeadingWrapper';
+import {
+  stackFrontEnd,
+  stackBackEnd,
+  stackDatabase,
+  stackOther,
+} from '../data';
 
 /**
  * Styled Components
@@ -39,136 +45,8 @@ const StackSkill = styled.div`
 `;
 
 const ToRightParagraph = styled.p`
-  display: flex;
-  justify-content: flex-end;
+  justify-self: end;
 `;
-
-/**
- * Other
- */
-const stackFrontEnd = [
-  {
-    text: 'JavaScript (Es6+)',
-    src: 'javascript.png',
-  },
-  {
-    text: 'jQuery',
-    src: 'jquery.png',
-  },
-  {
-    text: 'React',
-    src: 'react.png',
-  },
-  {
-    text: 'Vue.js *',
-    src: 'vue.png',
-  },
-  {
-    text: 'Apollo Client *',
-    src: 'apollo-client.png',
-  },
-  {
-    text: 'Next.js *',
-    src: 'next-js.png',
-  },
-  {
-    text: 'GatsbyJS *',
-    src: 'gatsby-js.png',
-  },
-  {
-    text: 'Styled Components',
-    src: 'styled-components.png',
-  },
-  {
-    text: 'GraphQL *',
-    src: 'graphql.png',
-  },
-  {
-    text: 'CSS3',
-    src: 'css3.png',
-  },
-  {
-    text: 'Sass',
-    src: 'sass.png',
-  },
-  {
-    text: 'CSS Grid',
-    src: 'css-grid.png',
-  },
-  {
-    text: 'Flexbox',
-    src: 'flexbox.png',
-  },
-  {
-    text: 'Bootstrap',
-    src: 'bootstrap.png',
-  },
-];
-
-const stackBackEnd = [
-  {
-    text: '.NET Framework',
-    src: 'net-framework.png',
-  },
-  {
-    text: '.NET Core',
-    src: 'net-core.png',
-  },
-  {
-    text: 'C#',
-    src: 'c-sharp.png',
-  },
-  {
-    text: 'Express.js *',
-    src: 'express-js.png',
-  },
-  {
-    text: 'Prisma *',
-    src: 'prisma.png',
-  },
-  {
-    text: 'GraphQL Yoga *',
-    src: 'graphql-yoga.png',
-  },
-];
-
-const stackDatabase = [
-  {
-    text: 'SQL Server',
-    src: 'sql-server.png',
-  },
-  {
-    text: 'SQL',
-    src: 'sql.png',
-  },
-  {
-    text: 'T-SQL',
-    src: 't-sql.png',
-  },
-];
-
-const stackOther = [
-  {
-    text: 'Webpack',
-    src: 'webpack.png',
-  },
-  {
-    text: 'npm',
-    src: 'npm.png',
-  },
-  {
-    text: 'Yarn',
-    src: 'yarn.png',
-  },
-  {
-    text: 'Git',
-    src: 'git.png',
-  },
-  {
-    text: 'GitHub',
-    src: 'github.png',
-  },
-];
 
 /**
  * Component

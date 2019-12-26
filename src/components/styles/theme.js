@@ -9,5 +9,5 @@ export const theme = {
   border: '#D8D8D8',
   hoverOne: '#E2E2E2',
   phone: '767px',
-  mainLayout: 'minmax(10px, auto) minmax(200px, 900px) minmax(10px, auto)',
+  mainLayout: 'minmax(10px, auto) minmax(200px, 1000px) minmax(10px, auto)',
 };
