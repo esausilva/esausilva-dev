@@ -30,6 +30,7 @@
     "react-scroll": "^1.7.14",
     "react-typing-animation": "^1.6.2",
     "react-typography": "^0.16.19",
+    "react-web-tabs": "^1.0.1",
     "styled-components": "^4.3.2",
     "typography": "^0.16.19"
   },

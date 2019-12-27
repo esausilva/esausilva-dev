@@ -142,7 +142,7 @@ export const portfolio = [
   {
     project: 'Print Shop Ordering System',
     stack:
-      '.NET Core | C# | Web API | SQL Server | T SQL | Stored Procedures | React | Redux | CSS Grid | Pure CSS | Sass',
+      '.NET Core | C# | Web API | SQL Server | T SQL | Stored Procedures | React | Redux | React Router | CSS Grid | Pure CSS | Sass',
     description:
       'The Region One ESC Print Shop department needed a complete re-write of the system they were using based on Microsoft Access. I developed a modern web based solution to meet their need.|The system allows them to input their orders and instantly get a quote regarding the total price for the particular order. In an easy-to-use interface I give them all of the services they offer, then they choose the specific services for an order and in the client app code I take care of all the calculations for the final price.|I did the complete design of the system including database, back-end and front-end, as well as development.',
     images: ['PrintShop1.png'],
@@ -195,5 +195,66 @@ export const wip = [
     description:
       'I am currently working on a personal project I have been wanting to do for a long time. This application will have a SaaS model and is a journal to keep track of prayers. The user will be able to create different sections to organize prayers. Within each section, they can create different categories where they can add the prayers. There will be two kinds of prayers: Requests and Blessings and each prayer consists of a title and a description.|I will also give them the ability to mark each prayer as answered. Once it is marked as answered, then the prayer will move to an Answered section. Each Prayer and Section will be editable and can be deleted as well.|I am doing the complete design of the application including database, back-end and front-end, as well as development.',
     images: ['MQT1.png', 'MQT2.png', 'MQT3.png', 'MQT4.png'],
+  },
+];
+
+export const openSource = [
+  {
+    project: 'EsauSilva.dev',
+    stack: 'React | GatsbyJS | Styled Components | CSS Grid | Flexbox',
+    description:
+      'Portfolio website to showcase my work as a full-stack software engineer and to gain experience in GatsbyJS.',
+    link: 'https://github.com/esausilva/esausilva-dev',
+  },
+  {
+    project: 'react-starter-boilerplate-hmr',
+    stack: 'React | Webpack | React Router | Semantic UI',
+    description:
+      'React Starter Boilerplate with Hot Module Replacement and Webpack 4.',
+    link: 'https://github.com/esausilva/react-starter-boilerplate-hmr',
+  },
+  {
+    project: 'FullCalendar .NET Core',
+    stack: '.NET Core | SQL Server | SQL | jQuery | Webpack | Sass',
+    description:
+      'The project includes the implementation of FullCalendar in JavaScript ES6+ and comes wired with the necessary database access layer (including SQL statements) to interact with SQL Server.',
+    link: 'https://github.com/esausilva/fullcalendar-aspnet-core',
+  },
+  {
+    project: 'Getting Started with Vue.js in .NET Core',
+    stack: '.NET Core | Vue.js | Webpack | Sass',
+    description:
+      'This is the project source files for my tutorial on using Vue.js with .NET Core and Razor Pages.',
+    link: 'https://github.com/esausilva/vuejs-aspnet-core',
+  },
+  {
+    project: 'Compile Sass Files in Visual Studio and Webpack',
+    stack: '.NET Core | Webpack | Sass',
+    description:
+      '.NET Core MVC base project with support for Sass using Webpack that includes minification and autoprefixing CSS for production.',
+    link: 'https://github.com/esausilva/netcore-sass-webpack',
+  },
+  {
+    project:
+      'Character, Word, Sentence and Paragraph Counter in Vanilla JavaScript and React',
+    stack: 'React | VanillaJS',
+    description:
+      'Counts characters, words, sentences and paragraphs in a given text, written in Vanilla JavaScript (ES6+) and React.',
+    link:
+      'https://github.com/esausilva/character-word-sentence-paragraph-counter',
+  },
+  {
+    project: 'jQuery.SelectListActions',
+    stack: 'jQuery',
+    description:
+      'jQuery plugin that gives you several actions to perform with Select lists.',
+    link: 'https://github.com/esausilva/jquery.selectlistactions.js',
+  },
+  {
+    project: 'React Production Deployment',
+    stack: 'React | Heroku | Netlify | Now.sh',
+    description:
+      'The repo contains examples on how to deploy your React application to Netlify, Now and Heroku.',
+    link: 'https://github.com/esausilva/react-production-deployment',
   },
 ];
