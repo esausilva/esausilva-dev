@@ -33,7 +33,7 @@ const Blog = () => {
       <h2>EsauSilva.com</h2>
       <Ul>
         {blogEntires.esausilva.map(({ title, url }) => (
-          <li>
+          <li key={url}>
             <a href={url} target="_blank" rel="noopener noreferrer">
               {title}
             </a>
@@ -53,7 +53,7 @@ const Blog = () => {
       <h2>Medium.com</h2>
       <Ul>
         {blogEntires.medium.map(({ title, url }) => (
-          <li>
+          <li key={url}>
             <a href={url} target="_blank" rel="noopener noreferrer">
               {title}
             </a>
@@ -76,7 +76,7 @@ const Blog = () => {
       </p>
       <Ul>
         {blogEntires.upcoming.map(({ title, description }) => (
-          <li>
+          <li key={title}>
             {title}
             {description === '' ? null : (
               <ul>
