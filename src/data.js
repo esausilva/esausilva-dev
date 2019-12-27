@@ -258,3 +258,62 @@ export const openSource = [
     link: 'https://github.com/esausilva/react-production-deployment',
   },
 ];
+
+export const blogEntires = {
+  esausilva: [
+    {
+      title: 'Compile Sass Files in Visual Studio and Webpack',
+      url:
+        'https://esausilva.com/2018/08/30/compile-sass-files-visual-studio-webpack/',
+    },
+    {
+      title: 'Char, Word, Sentence and Paragraph Counter JavaScript and React',
+      url:
+        'https://esausilva.com/2017/08/26/character-word-sentence-paragraph-counter-in-vanilla-javascript-and-react/',
+    },
+    {
+      title: 'Quickly Set Up a Node ExpressJS Server to Serve a Static Site',
+      url:
+        'https://esausilva.com/2017/05/18/quickly-set-up-a-node-expressjs-server-to-serve-a-static-site/',
+    },
+    {
+      title:
+        'Calling Instructure Canvas LMS API in C# ASP.NET MVC Using RestSharp',
+      url:
+        'https://esausilva.com/2017/02/14/calling-instructure-canvas-lms-api-in-c-sharp-asp-net-mvc-using-restsharp/',
+    },
+  ],
+  medium: [
+    {
+      title: 'Getting Started with Vue.js in .NET Core using Visual Studio',
+      url:
+        'https://blog.bitsrc.io/getting-started-with-vue-js-in-net-core-using-visual-studio-efbb43703630',
+    },
+    {
+      title: 'How to use Webpack with React: an in-depth tutorial',
+      url:
+        'https://medium.com/free-code-camp/learn-webpack-for-react-a36d4cac5060',
+    },
+    {
+      title: 'How to get create-react-app to work with a Node.js back-end API',
+      url:
+        'https://medium.com/free-code-camp/how-to-make-create-react-app-work-with-a-node-backend-api-7c5c48acb1b0',
+    },
+    {
+      title: 'React OAuth Authentication with Firebase',
+      url:
+        'https://blog.bitsrc.io/react-oauth-authentication-with-firebase-dfe0e8c5d0d4',
+    },
+  ],
+  upcoming: [
+    {
+      title: 'Adding a React app to an existing .NET Core MVC app',
+      description: '',
+    },
+    {
+      title: 'Authentication and Authorization in .NET Core',
+      description:
+        'Will include Roles, Policies, Claims, View-Based Authorization',
+    },
+  ],
+};

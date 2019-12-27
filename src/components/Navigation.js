@@ -160,17 +160,17 @@ const Navigation = () => {
       <MenuWrapper style={isOpenMenu ? menuOpenStyle : null}>
         <CloseMenu onClick={toggleMenu}>&times;</CloseMenu>
         <Menu>
-          {menuItems.map(item => (
-            <li key={item.text}>
+          {menuItems.map(({ text, linkTo }) => (
+            <li key={text}>
               <Link
-                to={item.linkTo}
+                to={linkTo}
                 spy={true}
                 smooth={true}
                 duration={600}
                 offset={-80}
                 onClick={() => setIsOpenMenu(false)}
               >
-                {item.text}
+                {text}
               </Link>
             </li>
           ))}
