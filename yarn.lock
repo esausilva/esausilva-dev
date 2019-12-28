@@ -2956,6 +2956,15 @@ clone-response@1.0.2, clone-response@^1.0.2:
   dependencies:
     mimic-response "^1.0.0"
 
+cloudinary@^1.15.0:
+  version "1.18.1"
+  resolved "https://registry.yarnpkg.com/cloudinary/-/cloudinary-1.18.1.tgz#b2963ce3816d688f5ae17b587d7743af734344ee"
+  integrity sha512-k9ZozOslI68JNQ/1KeS8oU+aezDHZ0+9si8g+5PgvzfYsDILy8s68lnr59rlOO7SogeA7i+eZYFddf1/rN5tBw==
+  dependencies:
+    lodash "^4.17.11"
+    q "^1.5.1"
+    typescript "^2.9.2"
+
 coa@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/coa/-/coa-2.0.2.tgz#43f6c21151b4ef2bf57187db0d73de229e3e7ec3"
@@ -5608,6 +5617,15 @@ gatsby-telemetry@^1.1.46:
     stack-trace "^0.0.10"
     stack-utils "1.0.2"
     uuid "3.3.3"
+
+gatsby-transformer-cloudinary@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-cloudinary/-/gatsby-transformer-cloudinary-0.3.0.tgz#ad695862b319f87f1931bca31da6a737130164a2"
+  integrity sha512-C8UzeOmKeSygqH7s54WUNAm/mOUBVofnWNhjygQUSWbgnKDTv9Twae6IUHxp6zr3k8KtLuC5HyUpyK7ksFPBzw==
+  dependencies:
+    axios "^0.19.0"
+    cloudinary "^1.15.0"
+    fs-extra "^8.1.0"
 
 gatsby-transformer-sharp@^2.3.9:
   version "2.3.9"
@@ -9914,7 +9932,7 @@ punycode@^2.1.0:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
-q@^1.1.2:
+q@^1.1.2, q@^1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
   integrity sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
@@ -12101,6 +12119,11 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+typescript@^2.9.2:
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.9.2.tgz#1cbf61d05d6b96269244eb6a3bce4bd914e0f00c"
+  integrity sha512-Gr4p6nFNaoufRIY4NMdpQRNmgxVIGMs4Fcu/ujdYk3nAZqk7supzBE9idmvfZIlH/Cuj//dvi+019qEue9lV0w==
 
 typescript@^3.7.2:
   version "3.7.4"

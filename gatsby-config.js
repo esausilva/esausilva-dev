@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
     title: `Full-Stack Software Engineer`,
@@ -38,6 +40,15 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: 'UA-16236406-5',
+      },
+    },
+    {
+      resolve: 'gatsby-transformer-cloudinary',
+      options: {
+        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+        apiKey: process.env.CLOUDINARY_API_KEY,
+        apiSecret: process.env.CLOUDINARY_API_SECRET,
+        uploadFolder: 'esausilva-dev/portfolio/',
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

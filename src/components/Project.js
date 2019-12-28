@@ -3,10 +3,13 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Carousel } from 'react-responsive-carousel';
 
-import ImgFixed from './ImgFixed';
+import ProjectImage from './ProjectImage';
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
+/**
+ * Styled Components
+ */
 const ProjectWrapperBase = styled.section`
   display: grid;
   grid-template-rows: auto;
@@ -39,6 +42,9 @@ const ProjectWrapper2 = styled(ProjectWrapperBase)`
   grid-template-areas: 'desc image' 'stack stack';
 `;
 
+/**
+ * Component
+ */
 const Project = ({ project, stack, description, images, style }) => {
   const Body = () => (
     <>
@@ -51,13 +57,7 @@ const Project = ({ project, stack, description, images, style }) => {
           width="300px"
         >
           {images.map(image => (
-            <ImgFixed
-              src={image}
-              alt={project}
-              width={300}
-              height={200}
-              key={image}
-            />
+            <ProjectImage image={image} alt={project} key={image} />
           ))}
         </Carousel>
       </div>
