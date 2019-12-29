@@ -18,7 +18,7 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     height: 100%;
     color: ${theme.fontMain};
-    letter-spacing: 0.06rem;
+    letter-spacing: 0.07rem;
     font-size: 2rem;
   }
   p,
