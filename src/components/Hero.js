@@ -63,6 +63,7 @@ const Avatar = styled(Img)`
   border-radius: 50%;
   border: 2px solid ${props => props.theme.fontHeading};
   margin-bottom: 20px;
+  align-self: center;
   @media (max-width: ${props => props.theme.phone}) {
     width: 130px !important;
     height: 130px !important;
