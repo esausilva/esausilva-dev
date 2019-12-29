@@ -21,7 +21,11 @@ const ProjectImage = ({ image, alt }) => {
     });
   }, [image]);
 
-  return fixed ? <Image fixed={fixed} alt={alt} /> : <p>loading...</p>;
+  return fixed ? (
+    <Image fixed={fixed} alt={alt} loading="lazy" />
+  ) : (
+    <p>loading...</p>
+  );
 };
 
 ProjectImage.propTypes = {
