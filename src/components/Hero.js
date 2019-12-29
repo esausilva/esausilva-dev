@@ -25,6 +25,7 @@ const Header = styled.header`
   position: relative;
   background: ${props => props.theme.primaryBg};
   color: #fff;
+  display: flex;
   display: grid;
   justify-content: center;
 `;
