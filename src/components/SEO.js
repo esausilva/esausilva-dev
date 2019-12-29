@@ -62,11 +62,11 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:url`,
-          content: `https://esausilva.dev`,
+          content: `https://www.esausilva.dev`,
         },
         {
           property: `og:image`,
-          content: `https://esausilva.dev${socialCard.edges[0].node.publicURL}`,
+          content: `https://www.esausilva.dev${socialCard.edges[0].node.publicURL}`,
         },
         {
           property: `og:image:width`,
@@ -82,7 +82,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:image`,
-          content: `https://esausilva.dev${socialCard.edges[0].node.publicURL}`,
+          content: `https://www.esausilva.dev${socialCard.edges[0].node.publicURL}`,
         },
         {
           name: `twitter:creator`,
