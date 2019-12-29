@@ -16,6 +16,9 @@ const Nav = styled.nav`
   height: 90px;
   padding: 30px;
   z-index: 3;
+  @media (max-width: ${props => props.theme.phone}) {
+    height: 60px;
+  }
 `;
 
 const NameButton = styled.button`
@@ -25,6 +28,9 @@ const NameButton = styled.button`
   font-size: 1.8rem;
   background: transparent;
   cursor: pointer;
+  @media (max-width: ${props => props.theme.phone}) {
+    font-size: 1.5rem;
+  }
 `;
 
 const MenuWrapper = styled.div`
@@ -167,7 +173,7 @@ const Navigation = () => {
                 spy={true}
                 smooth={true}
                 duration={600}
-                offset={-80}
+                offset={-60}
                 onClick={() => setIsOpenMenu(false)}
               >
                 {text}
