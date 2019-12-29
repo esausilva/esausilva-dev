@@ -3,7 +3,7 @@ require('dotenv').config();
 module.exports = {
   siteMetadata: {
     title: `Full-Stack Software Engineer`,
-    description: `Esau Silva is a Full=Stack Software Engineer and avid Brazilian Jiu-Jitsu practitioner. In this site you can find more about him and his work as a Software Engineer.`,
+    description: `Hello, I'm Esau Silva Full-Stack Software Engineer and avid Brazilian Jiu-Jitsu practitioner. Find out about my work as a Software Engineer.`,
     author: `@_esausilva`,
   },
   plugins: [

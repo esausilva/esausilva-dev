@@ -11,7 +11,7 @@ import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
 function SEO({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
+  const { site, socialCard } = useStaticQuery(
     graphql`
       query {
         site {
@@ -19,6 +19,15 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+          }
+        }
+        socialCard: allFile(
+          filter: { name: { regex: "/esau-silva-social-card/" } }
+        ) {
+          edges {
+            node {
+              publicURL
+            }
           }
         }
       }
@@ -52,8 +61,28 @@ function SEO({ description, lang, meta, title }) {
           content: `website`,
         },
         {
+          property: `og:url`,
+          content: `https://esausilva.dev`,
+        },
+        {
+          property: `og:image`,
+          content: `https://esausilva.dev${socialCard.edges[0].node.publicURL}`,
+        },
+        {
+          property: `og:image:width`,
+          content: `1200`,
+        },
+        {
+          property: `og:image:height`,
+          content: `630`,
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
+        },
+        {
+          name: `twitter:image`,
+          content: `https://esausilva.dev${socialCard.edges[0].node.publicURL}`,
         },
         {
           name: `twitter:creator`,
