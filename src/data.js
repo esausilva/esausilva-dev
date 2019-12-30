@@ -189,7 +189,7 @@ export const portfolio = [
 
 export const wip = [
   {
-    project: 'My Quite Time - A Prayer Journal',
+    project: 'My Quiet Time - A Prayer Journal',
     stack:
       'React | Next.js | Apollo Client | Styled Components | CSS Grid | GraphQL | Prisma | GraphQL Yoga | MySQL',
     description:
