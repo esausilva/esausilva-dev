@@ -58,7 +58,7 @@ const About = () => {
         <h1>About Me</h1>
       </HeadingWrapper>
       <p>
-        I am a Full-Stack Software Engineer with 7+ years of professional
+        I am a Full-Stack Software Engineer with 8 years of professional
         experience in building web applications.
       </p>
       <p>
