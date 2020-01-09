@@ -305,11 +305,14 @@ export const blogEntires = {
         'https://blog.bitsrc.io/react-oauth-authentication-with-firebase-dfe0e8c5d0d4',
     },
   ],
-  upcoming: [
+  newline: [
     {
-      title: 'Adding a React app to an existing .NET Core MVC app',
-      description: '',
+      title: 'Adding a React App to a .NET Core MVC App',
+      url:
+        'https://www.newline.co/@esausilva/adding-a-react-app-to-a-.net-core-mvc-app--63008d15',
     },
+  ],
+  upcoming: [
     {
       title: 'Authentication and Authorization in .NET Core',
       description:

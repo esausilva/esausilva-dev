@@ -27,7 +27,7 @@ const Blog = () => {
 
       <p>
         These are some blog entries I have published on my personal blog site
-        and on the Medium platform.
+        and some other platforms.
       </p>
 
       <h2>EsauSilva.com</h2>
@@ -69,6 +69,17 @@ const Blog = () => {
           See more
         </a>
       </More>
+
+      <h2>Newline</h2>
+      <Ul>
+        {blogEntires.newline.map(({ title, url }) => (
+          <li key={url}>
+            <a href={url} target="_blank" rel="noopener noreferrer">
+              {title}
+            </a>
+          </li>
+        ))}
+      </Ul>
 
       <h2>Upcoming</h2>
       <p>
