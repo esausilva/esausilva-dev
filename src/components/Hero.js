@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import posed from 'react-pose';
 import Typing from 'react-typing-animation';
 import { useStaticQuery, graphql } from 'gatsby';
@@ -59,7 +59,7 @@ const HeroContent = styled.section`
   }
 `;
 
-const Avatar = styled(Img)`
+const Avatar = styled(GatsbyImage)`
   border-radius: 50%;
   border: 2px solid ${props => props.theme.fontHeading};
   margin-bottom: 20px;
@@ -86,28 +86,23 @@ const Hero = () => {
     query {
       avatar: file(relativePath: { eq: "esausilva-small.jpg" }) {
         childImageSharp {
-          fixed(width: 166, height: 166) {
-            ...GatsbyImageSharpFixed_withWebp
-          }
+          gatsbyImageData(layout: CONSTRAINED, width: 166, height: 166)
         }
       }
       more: file(relativePath: { eq: "icon-circle-down-arrow.png" }) {
         childImageSharp {
-          resize(width: 31, height: 31) {
-            src
-          }
+          gatsbyImageData(layout: FIXED, width: 31, height: 31)
         }
       }
     }
   `);
+  const avatarImage = getImage(images.avatar);
+  const moreArrowImage = getImage(images.more);
 
   return (
     <Header>
       <HeroContent>
-        <Avatar
-          fixed={images.avatar.childImageSharp.fixed}
-          alt="Esau Silva Photo"
-        />
+        <Avatar image={avatarImage} alt="Esau Silva Photo" />
         <Typing speed={40}>
           <h1>Hello there! I’m Esau Silva</h1>
           <h2>
@@ -117,7 +112,7 @@ const Hero = () => {
         </Typing>
         <More>
           <Link to="navigation" spy={true} smooth={true} duration={600}>
-            <img src={images.more.childImageSharp.resize.src} alt="See More" />
+            <GatsbyImage image={moreArrowImage} alt="See More" />
           </Link>
         </More>
       </HeroContent>

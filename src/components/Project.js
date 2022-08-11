@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Carousel } from 'react-responsive-carousel';
 
-import ProjectImage from './ProjectImage';
+import { CloudinaryImage } from './CloudinaryImage';
+import { transformationsFormat } from '../utils';
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
@@ -57,7 +58,13 @@ const Project = ({ project, stack, description, images, style }) => {
           width="300px"
         >
           {images.map(image => (
-            <ProjectImage image={image} alt={project} key={image} />
+            <CloudinaryImage
+              alt={project}
+              title={project}
+              relativePath={image}
+              transformations={transformationsFormat('w_300')}
+              key={image}
+            />
           ))}
         </Carousel>
       </div>
@@ -103,4 +110,4 @@ Project.propTypes = {
   style: PropTypes.oneOf(['even', 'odd']),
 };
 
-export default Project;
+export { Project };

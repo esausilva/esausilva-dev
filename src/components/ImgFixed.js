@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { useStaticQuery, graphql } from 'gatsby';
 
 const ImgFixed = ({ src, alt, height, width }) => {
@@ -9,8 +9,8 @@ const ImgFixed = ({ src, alt, height, width }) => {
       allImageSharp {
         edges {
           node {
+            gatsbyImageData(layout: FIXED, height: 60, width: 60)
             fixed {
-              ...GatsbyImageSharpFixed_withWebp
               originalName
             }
           }
@@ -19,21 +19,16 @@ const ImgFixed = ({ src, alt, height, width }) => {
     }
   `);
 
-  const image = allImageSharp.edges.find(
-    edge => edge.node.fixed.originalName === src
+  const imageNode = allImageSharp.edges.find(
+    edge => edge.node.fixed.originalName === src,
   );
+  const image = getImage(imageNode.node);
 
   if (!image) {
     return null;
   }
 
-  const overrideImageProps = {
-    ...image.node.fixed,
-    width,
-    height,
-  };
-
-  return <Img fixed={overrideImageProps} alt={alt} />;
+  return <GatsbyImage image={image} alt={alt} height={height} width={width} />;
 };
 
 ImgFixed.propTypes = {

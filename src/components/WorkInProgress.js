@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-import Project from './Project';
+import { Project } from './Project';
 import { HeadingWrapper } from './styles/HeadingWrapper';
 import { Hr } from './styles/Hr';
 import { wip } from '../data';
