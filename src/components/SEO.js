@@ -31,7 +31,7 @@ function SEO({ description, lang, meta, title }) {
           }
         }
       }
-    `
+    `,
   );
 
   const metaDescription = description || site.siteMetadata.description;
@@ -114,4 +114,4 @@ SEO.propTypes = {
   title: PropTypes.string.isRequired,
 };
 
-export default SEO;
+export { SEO };

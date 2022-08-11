@@ -195,4 +195,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export { Navigation };

@@ -25,4 +25,4 @@ const WorkInProgress = () => {
   );
 };
 
-export default WorkInProgress;
+export { WorkInProgress };

@@ -43,4 +43,4 @@ ImgFixed.defaultProps = {
   width: 60,
 };
 
-export default ImgFixed;
+export { ImgFixed };

@@ -101,4 +101,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export { Blog };

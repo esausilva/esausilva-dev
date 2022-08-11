@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import ImgFixed from './ImgFixed';
+import { ImgFixed } from './ImgFixed';
 import { HeadingWrapper } from './styles/HeadingWrapper';
 import {
   stackFrontEnd,
@@ -132,4 +132,4 @@ const About = () => {
   );
 };
 
-export default About;
+export { About };

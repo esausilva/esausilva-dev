@@ -86,4 +86,4 @@ const OpenSource = () => {
   );
 };
 
-export default OpenSource;
+export { OpenSource };

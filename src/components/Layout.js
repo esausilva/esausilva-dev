@@ -11,10 +11,10 @@ import styled, { ThemeProvider } from 'styled-components';
 
 import { theme } from './styles/theme';
 import { GlobalStyles } from './styles/globalStyles';
-import SEO from './SEO';
-import Hero from './Hero';
-import Navigation from './Navigation';
-import Footer from '../components/Footer';
+import { SEO } from './SEO';
+import { Hero } from './Hero';
+import { Navigation } from './Navigation';
+import { Footer } from '../components/Footer';
 
 /**
  * Styled Components
@@ -60,4 +60,4 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default Layout;
+export { Layout };
