@@ -57,10 +57,7 @@ const About = () => {
       <HeadingWrapper id="nav-about">
         <h1>About Me</h1>
       </HeadingWrapper>
-      <p>
-        I am a Full-Stack Software Engineer with 8 years of professional
-        experience in building web applications.
-      </p>
+      <p>I am an experienced Full-Stack Software Engineer.</p>
       <p>
         When working on a project, I enjoy being involved in anything from the
         initial requirements, architectural design, database design to the

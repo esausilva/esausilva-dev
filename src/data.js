@@ -4,27 +4,11 @@ export const stackFrontEnd = [
     src: 'javascript.png',
   },
   {
-    text: 'jQuery',
-    src: 'jquery.png',
-  },
-  {
     text: 'React',
     src: 'react.png',
   },
   {
-    text: 'Vue.js *',
-    src: 'vue.png',
-  },
-  {
-    text: 'Apollo Client *',
-    src: 'apollo-client.png',
-  },
-  {
-    text: 'Next.js *',
-    src: 'next-js.png',
-  },
-  {
-    text: 'GatsbyJS *',
+    text: 'GatsbyJS',
     src: 'gatsby-js.png',
   },
   {
@@ -34,6 +18,10 @@ export const stackFrontEnd = [
   {
     text: 'GraphQL *',
     src: 'graphql.png',
+  },
+  {
+    text: 'Next.js *',
+    src: 'next-js.png',
   },
   {
     text: 'CSS3',
@@ -51,17 +39,9 @@ export const stackFrontEnd = [
     text: 'Flexbox',
     src: 'flexbox.png',
   },
-  {
-    text: 'Bootstrap',
-    src: 'bootstrap.png',
-  },
 ];
 
 export const stackBackEnd = [
-  {
-    text: '.NET Framework',
-    src: 'net-framework.png',
-  },
   {
     text: '.NET Core',
     src: 'net-core.png',
@@ -71,16 +51,12 @@ export const stackBackEnd = [
     src: 'c-sharp.png',
   },
   {
+    text: '.NET Framework',
+    src: 'net-framework.png',
+  },
+  {
     text: 'Express.js *',
     src: 'express-js.png',
-  },
-  {
-    text: 'Prisma *',
-    src: 'prisma.png',
-  },
-  {
-    text: 'GraphQL Yoga *',
-    src: 'graphql-yoga.png',
   },
 ];
 
@@ -223,8 +199,15 @@ export const openSource = [
     project: 'EsauSilva.dev',
     stack: 'React | GatsbyJS | Styled Components | CSS Grid | Flexbox',
     description:
-      'Portfolio website to showcase my work as a full-stack software engineer and to gain experience in GatsbyJS.',
+      'Portfolio website to showcase my work as a full-stack software engineer. Using Cloudinary to host and serve some the images.',
     link: 'https://github.com/esausilva/esausilva-dev',
+  },
+  {
+    project: 'Andrea Silva Design',
+    stack: 'React | GatsbyJS | Styled Components | CSS Grid | Flexbox',
+    description:
+      'Andrea Silva is an Artist and Graphic Designer. The site shows her artwork with galleries where you can buy some of her original artwork. Using Cloudinary to host and serve all the images.',
+    link: 'https://github.com/esausilva/andrea-silva-design',
   },
   {
     project: 'react-starter-boilerplate-hmr',
@@ -263,13 +246,6 @@ export const openSource = [
     link: 'https://github.com/esausilva/character-word-sentence-paragraph-counter',
   },
   {
-    project: 'jQuery.SelectListActions',
-    stack: 'jQuery',
-    description:
-      'jQuery plugin that gives you several actions to perform with Select lists.',
-    link: 'https://github.com/esausilva/jquery.selectlistactions.js',
-  },
-  {
     project: 'React Production Deployment',
     stack: 'React | Heroku | Netlify | Now.sh',
     description:
@@ -280,6 +256,18 @@ export const openSource = [
 
 export const blogEntires = {
   esausilva: [
+    {
+      title: 'Create a React Custom Lightbox Gallery',
+      url: 'https://esausilva.com/2021/09/07/create-a-react-custom-lightbox-gallery/',
+    },
+    {
+      title: 'Create a React Custom Modal',
+      url: 'https://esausilva.com/2021/08/31/create-a-react-custom-modal/',
+    },
+    {
+      title: 'React Hook to play a video with Intersection Observer',
+      url: 'https://esausilva.com/2021/06/14/react-hook-to-play-video-using-intersection-observer/',
+    },
     {
       title: 'Compile Sass Files in Visual Studio and Webpack',
       url: 'https://esausilva.com/2018/08/30/compile-sass-files-visual-studio-webpack/',
@@ -322,11 +310,5 @@ export const blogEntires = {
       url: 'https://www.newline.co/@esausilva/adding-a-react-app-to-a-.net-core-mvc-app--63008d15',
     },
   ],
-  upcoming: [
-    {
-      title: 'Authentication and Authorization in .NET Core',
-      description:
-        'Will include Roles, Policies, Claims, View-Based Authorization',
-    },
-  ],
+  upcoming: [],
 };

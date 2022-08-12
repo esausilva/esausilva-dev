@@ -128,10 +128,10 @@ const menuItems = [
     text: 'portfolio',
     linkTo: 'nav-portfolio',
   },
-  {
-    text: 'wip',
-    linkTo: 'nav-wip',
-  },
+  // {
+  //   text: 'wip',
+  //   linkTo: 'nav-wip',
+  // },
   {
     text: 'open source',
     linkTo: 'nav-oss',

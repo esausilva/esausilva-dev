@@ -11,7 +11,7 @@ import styled, { ThemeProvider } from 'styled-components';
 
 import { theme } from './styles/theme';
 import { GlobalStyles } from './styles/globalStyles';
-import { SEO } from './SEO';
+import { Seo } from './SEO';
 import { Hero } from './Hero';
 import { Navigation } from './Navigation';
 import { Footer } from '../components/Footer';
@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
     <ThemeProvider theme={theme}>
       <>
         <GlobalStyles />
-        <SEO title="Esau Silva" />
+        <Seo title="Esau Silva" />
         <Hero />
         <Navigation />
         <Main>{children}</Main>

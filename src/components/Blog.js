@@ -81,22 +81,25 @@ const Blog = () => {
         ))}
       </Ul>
 
-      <h2>Upcoming</h2>
-      <p>
-        <em>(Tentative titles)</em>
-      </p>
-      <Ul>
-        {blogEntires.upcoming.map(({ title, description }) => (
-          <li key={title}>
-            {title}
-            {description === '' ? null : (
-              <ul>
-                <li>{description}</li>
-              </ul>
-            )}
-          </li>
-        ))}
-      </Ul>
+      {blogEntires.upcoming.length > 0 ? (
+        <>
+          <h2>Upcoming</h2>
+          <Ul>
+            {blogEntires.upcoming.map(({ title, description }) => (
+              <li key={title}>
+                {title}
+                {description === '' ? null : (
+                  <ul>
+                    <li>{description}</li>
+                  </ul>
+                )}
+              </li>
+            ))}
+          </Ul>
+        </>
+      ) : (
+        ''
+      )}
     </>
   );
 };

@@ -114,4 +114,4 @@ SEO.propTypes = {
   title: PropTypes.string.isRequired,
 };
 
-export { SEO };
+export { SEO as Seo };
