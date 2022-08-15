@@ -14,7 +14,8 @@ const Portfolio = () => {
       </HeadingWrapper>
 
       <p>
-        Below are some of the web applications I have designed and developed.
+        Some of the web applications I have designed and developed over the
+        years.
       </p>
 
       <div>

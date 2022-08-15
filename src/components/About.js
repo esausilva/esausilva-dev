@@ -57,21 +57,27 @@ const About = () => {
       <HeadingWrapper id="nav-about">
         <h1>About Me</h1>
       </HeadingWrapper>
-      <p>I am an experienced Full-Stack Software Engineer.</p>
       <p>
-        I enjoy being involved in anything from the initial requirements,
-        architectural design, database design to the actual development of the
-        application (front-end as well as back-end). When it comes to databases,
-        I wouldn't call myself a Database Administrator, but I do like to write
-        the queries and stored procedures to be used in my applications.
+        I am an experienced Full-Stack Software Engineer, however, I currently
+        work 100% as a back-end engineer on the .NET Stack.
       </p>
       <p>
-        Outside of being an engineer, I am a Brazilian Jiu-Jitsu practitioner
-        and hold a Blue Belt under Gracie Barra. I have been practicing the
-        sport since 2015 and I really enjoy it, especially when I'm applying a
-        choke to my sparring partner.
+        I build microservices and APIs for my current employer, a financial
+        company. We build on top of an event-driven architecture using
+        NServiceBus for communication between microservices and APIs. Fully
+        automated deployments (CI/CD) with Azure DevOps.
       </p>
-      <p>Below are the technologies I am familiar with</p>
+      <p>
+        On my current role, I lead the development of one of our newest product
+        offerings. I collaborate internally with multiple teams, as well as
+        externally with clients and their development teams.
+      </p>
+      <p>
+        Outside of being an engineer, I love hiking with my wife and son. I
+        trained Brazilian Jiu-Jitsu for 5 years, which I hope to pick up again
+        sometime. And I love learning new technologies.
+      </p>
+      <p>Below some of the technologies I am familiar with.</p>
 
       <Card>
         <CardHeader>Front-End</CardHeader>
