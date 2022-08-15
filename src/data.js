@@ -58,6 +58,10 @@ export const stackBackEnd = [
     text: 'Express.js *',
     src: 'express-js.png',
   },
+  {
+    text: 'NServiceBus',
+    src: 'particular-software.png',
+  },
 ];
 
 export const stackDatabase = [
@@ -99,6 +103,19 @@ export const stackOther = [
 ];
 
 export const portfolio = [
+  {
+    project: 'Andrea Silva Design',
+    stack: 'React | GatsbyJS | Styled Components | CSS Grid | Flexbox',
+    description:
+      'Andrea Silva is an artist and graphic designer. I created a custom gallery and gallery viewer to display her artwork and design work. The site also displays a different layout gallery with original artwork currently for sale and previously sold.|Some third party integrations include Formspree for the contact form and purchase orders and Mailchimp for email sign-ups.',
+    images: [
+      'portfolio/AndreaSilvaDesign1.jpg',
+      'portfolio/AndreaSilvaDesign2.jpg',
+      'portfolio/AndreaSilvaDesign3.jpg',
+      'portfolio/AndreaSilvaDesign4.jpg',
+      'portfolio/AndreaSilvaDesign5.jpg',
+    ],
+  },
   {
     project: 'OmniTrack',
     stack:
@@ -236,14 +253,6 @@ export const openSource = [
     description:
       '.NET Core MVC base project with support for Sass using Webpack that includes minification and autoprefixing CSS for production.',
     link: 'https://github.com/esausilva/netcore-sass-webpack',
-  },
-  {
-    project:
-      'Character, Word, Sentence and Paragraph Counter in Vanilla JavaScript and React',
-    stack: 'React | VanillaJS',
-    description:
-      'Counts characters, words, sentences and paragraphs in a given text, written in Vanilla JavaScript (ES6+) and React.',
-    link: 'https://github.com/esausilva/character-word-sentence-paragraph-counter',
   },
   {
     project: 'React Production Deployment',

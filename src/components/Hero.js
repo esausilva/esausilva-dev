@@ -105,10 +105,7 @@ const Hero = () => {
         <Avatar image={avatarImage} alt="Esau Silva Photo" />
         <Typing speed={40}>
           <h1>Hello there! I’m Esau Silva</h1>
-          <h2>
-            Full-Stack Software Engineer <br />
-            Brazilian Jiu-Jitsu Practitioner
-          </h2>
+          <h2>Full-Stack Software Engineer</h2>
         </Typing>
         <More>
           <Link to="navigation" spy={true} smooth={true} duration={600}>

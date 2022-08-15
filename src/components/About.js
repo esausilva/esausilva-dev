@@ -59,12 +59,11 @@ const About = () => {
       </HeadingWrapper>
       <p>I am an experienced Full-Stack Software Engineer.</p>
       <p>
-        When working on a project, I enjoy being involved in anything from the
-        initial requirements, architectural design, database design to the
-        actual development of the application (front-end as well as back-end).
-        When it comes to databases, I wouldn't call myself a Database
-        Administrator, but I do like to write the queries and stored procedures
-        to be used in my applications.
+        I enjoy being involved in anything from the initial requirements,
+        architectural design, database design to the actual development of the
+        application (front-end as well as back-end). When it comes to databases,
+        I wouldn't call myself a Database Administrator, but I do like to write
+        the queries and stored procedures to be used in my applications.
       </p>
       <p>
         Outside of being an engineer, I am a Brazilian Jiu-Jitsu practitioner
