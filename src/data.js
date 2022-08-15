@@ -81,6 +81,10 @@ export const stackDatabase = [
 
 export const stackOther = [
   {
+    text: 'Azure DevOps',
+    src: 'azure-devops.png',
+  },
+  {
     text: 'Webpack',
     src: 'webpack.png',
   },

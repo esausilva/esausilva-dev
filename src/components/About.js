@@ -58,8 +58,8 @@ const About = () => {
         <h1>About Me</h1>
       </HeadingWrapper>
       <p>
-        I am an experienced Full-Stack Software Engineer, however, I currently
-        work 100% as a back-end engineer on the .NET Stack.
+        Experienced Full-Stack Software Engineer currently working 100% as a
+        back-end engineer on the .NET Stack.
       </p>
       <p>
         I build microservices and APIs for my current employer, a financial
