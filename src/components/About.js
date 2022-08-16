@@ -14,7 +14,7 @@ import {
  * Styled Components
  */
 const Card = styled.section`
-  border: 1px solid ${props => props.theme.border};
+  border: 1px solid ${({ theme }) => theme.border};
   border-radius: 5px;
   margin-bottom: 1em;
 `;
@@ -22,7 +22,7 @@ const Card = styled.section`
 const CardHeader = styled.div`
   padding: 0.7em;
   font-size: 1.8rem;
-  border-bottom: 1px solid ${props => props.theme.border};
+  border-bottom: 1px solid ${({ theme }) => theme.border};
 `;
 
 const CardBody = styled.div`
@@ -63,7 +63,7 @@ const About = () => {
       </p>
       <p>
         I build microservices and APIs for my current employer, a company in the
-        financial sector. We build on top of an event-driven architecture using
+        FinTech space. We build on top of an event-driven architecture using
         NServiceBus as our messaging platform. Fully automated deployments
         (CI/CD) with Azure DevOps.
       </p>

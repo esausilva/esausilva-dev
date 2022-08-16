@@ -13,13 +13,13 @@ import { faBlog } from '@fortawesome/free-solid-svg-icons';
  * Styled Components
  */
 const FooterStyle = styled.footer`
-  background: ${props => props.theme.footerBg};
+  background: ${({ theme }) => theme.footerBg};
   grid-column: 1 / -1;
   height: 180px;
   color: #fff;
   margin-top: 1em;
   display: grid;
-  grid-template-columns: ${props => props.theme.mainLayout};
+  grid-template-columns: ${({ theme }) => theme.mainLayout};
   section {
     grid-column: 2 / -2;
     justify-self: center;

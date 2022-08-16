@@ -14,10 +14,10 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
  */
 const ProjectWrapper = styled.section`
   display: grid;
-  grid-template-columns: ${props =>
-    props.position === EVEN ? '300px auto' : 'auto 300px'};
-  grid-template-areas: ${props =>
-    props.position === EVEN
+  grid-template-columns: ${({ position }) =>
+    position === EVEN ? '300px auto' : 'auto 300px'};
+  grid-template-areas: ${({ position }) =>
+    position === EVEN
       ? '"image desc" "stack stack"'
       : '"desc image" "stack stack"'};
   grid-template-rows: auto;
@@ -34,7 +34,7 @@ const ProjectWrapper = styled.section`
     grid-area: stack;
     text-align: center;
   }
-  @media (max-width: ${props => props.theme.phone}) {
+  @media (max-width: ${({ theme }) => theme.phone}) {
     grid-template-columns: 1fr;
     grid-template-areas: 'image' 'desc' 'stack';
   }

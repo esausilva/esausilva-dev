@@ -6,37 +6,36 @@ import { Link, animateScroll as scroll } from 'react-scroll';
  * Styled Components
  */
 const Nav = styled.nav`
-  /* border-top: 1px solid red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0px;
-  background: ${props => props.theme.primaryBg};
+  background: ${({ theme }) => theme.primaryBg};
   height: 90px;
   padding: 30px;
   z-index: 3;
-  @media (max-width: ${props => props.theme.phone}) {
+  @media (max-width: ${({ theme }) => theme.phone}) {
     height: 60px;
   }
 `;
 
 const NameButton = styled.button`
-  border: 2px solid ${props => props.theme.accent};
-  color: ${props => props.theme.accent};
+  border: 2px solid ${({ theme }) => theme.accent};
+  color: ${({ theme }) => theme.accent};
   padding: 3px;
   font-size: 1.8rem;
   background: transparent;
   cursor: pointer;
-  @media (max-width: ${props => props.theme.phone}) {
+  @media (max-width: ${({ theme }) => theme.phone}) {
     font-size: 1.5rem;
   }
 `;
 
 const MenuWrapper = styled.div`
-  @media (max-width: ${props => props.theme.phone}) {
+  @media (max-width: ${({ theme }) => theme.phone}) {
     position: fixed;
-    background: ${props => props.theme.primaryBg};
+    background: ${({ theme }) => theme.primaryBg};
     width: 100%;
     top: 0;
     right: 0;
@@ -56,7 +55,7 @@ const Hamburger = styled.button`
   margin-left: auto;
   font-size: 1.5em;
   display: none;
-  @media (max-width: ${props => props.theme.phone}) {
+  @media (max-width: ${({ theme }) => theme.phone}) {
     display: inline-block;
   }
 `;
@@ -74,7 +73,7 @@ const Menu = styled.ul`
     &:after {
       display: block;
       content: '';
-      border-bottom: solid 2px ${props => props.theme.accent};
+      border-bottom: solid 2px ${({ theme }) => theme.accent};
       transform: scaleX(0);
       transition: transform 150ms ease-in-out;
     }
@@ -86,7 +85,7 @@ const Menu = styled.ul`
       text-decoration: none;
     }
   }
-  @media (max-width: ${props => props.theme.phone}) {
+  @media (max-width: ${({ theme }) => theme.phone}) {
     height: 100%;
     align-items: center;
     justify-content: space-around;
@@ -107,7 +106,7 @@ const CloseMenu = styled.button`
   padding: 0.5em;
   position: absolute;
   display: none;
-  @media (max-width: ${props => props.theme.phone}) {
+  @media (max-width: ${({ theme }) => theme.phone}) {
     display: inline-block;
   }
 `;

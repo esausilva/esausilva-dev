@@ -23,7 +23,7 @@ const moreAnimation = posed.div({
 const Header = styled.header`
   height: 100vh;
   position: relative;
-  background: ${props => props.theme.primaryBg};
+  background: ${({ theme }) => theme.primaryBg};
   color: #fff;
   display: flex;
   display: grid;
@@ -43,13 +43,13 @@ const HeroContent = styled.section`
     font-size: 3.6rem;
   }
   h2 {
-    color: ${props => props.theme.fontHeading};
+    color: ${({ theme }) => theme.fontHeading};
     font-size: 2.8rem;
   }
   div {
     text-align: center;
   }
-  @media (max-width: ${props => props.theme.phone}) {
+  @media (max-width: ${({ theme }) => theme.phone}) {
     h1 {
       font-size: 2.9rem;
     }
@@ -61,10 +61,10 @@ const HeroContent = styled.section`
 
 const Avatar = styled(GatsbyImage)`
   border-radius: 50%;
-  border: 2px solid ${props => props.theme.fontHeading};
+  border: 2px solid ${({ theme }) => theme.fontHeading};
   margin-bottom: 20px;
   align-self: center;
-  @media (max-width: ${props => props.theme.phone}) {
+  @media (max-width: ${({ theme }) => theme.phone}) {
     width: 130px !important;
     height: 130px !important;
   }

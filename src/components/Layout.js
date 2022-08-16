@@ -21,17 +21,17 @@ import { Footer } from '../components/Footer';
  */
 const Main = styled.main`
   display: grid;
-  grid-template-columns: ${props => props.theme.mainLayout};
+  grid-template-columns: ${({ theme }) => theme.mainLayout};
   & > * {
     grid-column: 2 / -2;
   }
   h1 {
-    color: ${props => props.theme.fontHeading};
+    color: ${({ theme }) => theme.fontHeading};
     text-transform: lowercase;
     margin: 0;
     font-weight: 300;
   }
-  @media (max-width: ${props => props.theme.phone}) {
+  @media (max-width: ${({ theme }) => theme.phone}) {
     h1 {
       font-size: 3.8rem;
     }
