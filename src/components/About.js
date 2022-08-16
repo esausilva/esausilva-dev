@@ -62,8 +62,8 @@ const About = () => {
         back-end engineer on the .NET Stack.
       </p>
       <p>
-        I build microservices and APIs for my current employer, a financial
-        company. We build on top of an event-driven architecture using
+        I build microservices and APIs for my current employer, a company in the
+        financial sector. We build on top of an event-driven architecture using
         NServiceBus for communication between microservices and APIs. Fully
         automated deployments (CI/CD) with Azure DevOps.
       </p>
@@ -74,8 +74,8 @@ const About = () => {
       </p>
       <p>
         Outside of being an engineer, I love hiking with my wife and son. I
-        trained Brazilian Jiu-Jitsu for 5 years, which I hope to pick up again
-        sometime. And I love learning new technologies.
+        trained in Brazilian Jiu-Jitsu for 5 years, which I hope to pick up
+        again, and nd I love learning new technologies.
       </p>
       <p>Below some of the technologies I am familiar with.</p>
 
