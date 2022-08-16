@@ -58,14 +58,14 @@ const About = () => {
         <h1>About Me</h1>
       </HeadingWrapper>
       <p>
-        Experienced Full-Stack Software Engineer currently working 100% as a
-        back-end engineer on the .NET Stack.
+        Experienced Full-Stack Software Engineer currently working as a back-end
+        engineer on the .NET Stack.
       </p>
       <p>
         I build microservices and APIs for my current employer, a company in the
         financial sector. We build on top of an event-driven architecture using
-        NServiceBus for communication between microservices and APIs. Fully
-        automated deployments (CI/CD) with Azure DevOps.
+        NServiceBus as our messaging platform. Fully automated deployments
+        (CI/CD) with Azure DevOps.
       </p>
       <p>
         On my current role, I lead the development of one of our newest product
@@ -75,7 +75,8 @@ const About = () => {
       <p>
         Outside of being an engineer, I love hiking with my wife and son. I
         trained in Brazilian Jiu-Jitsu for 5 years, which I hope to pick up
-        again, and nd I love learning new technologies.
+        again, I love learning new technologies and be challenged with
+        interesting problems that can be solved with technology.
       </p>
       <p>Below some of the technologies I am familiar with.</p>
 
