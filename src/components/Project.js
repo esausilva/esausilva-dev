@@ -34,7 +34,7 @@ const ProjectWrapper = styled.section`
     grid-area: stack;
     text-align: center;
   }
-  @media (max-width: ${({ theme }) => theme.phone}) {
+  @media (max-width: ${({ theme }) => theme.media.small}) {
     grid-template-columns: 1fr;
     grid-template-areas: 'image' 'desc' 'stack';
   }

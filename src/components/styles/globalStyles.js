@@ -17,7 +17,7 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     height: 100%;
-    color: ${theme.fontMain};
+    color: ${theme.colors.matteBlack};
     letter-spacing: 0.07rem;
     font-size: 2rem;
   }
@@ -33,13 +33,13 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 2rem;
   }
   a {
-    color: ${theme.fontMain};
+    color: ${theme.colors.matteBlack};
     &:focus,
     &:hover {
-      color: ${lighten(0.5, theme.fontMain)}
+      color: ${lighten(0.5, theme.colors.matteBlack)}
     }
   }
-  @media (max-width: ${theme.phone}) {
+  @media (max-width: ${theme.media.small}) {
     body {
       font-size: 1.8rem;
     }

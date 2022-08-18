@@ -14,7 +14,7 @@ import {
  * Styled Components
  */
 const Card = styled.section`
-  border: 1px solid ${({ theme }) => theme.border};
+  border: 1px solid ${({ theme }) => theme.colors.offGray};
   border-radius: 5px;
   margin-bottom: 1em;
 `;
@@ -22,7 +22,7 @@ const Card = styled.section`
 const CardHeader = styled.div`
   padding: 0.7em;
   font-size: 1.8rem;
-  border-bottom: 1px solid ${({ theme }) => theme.border};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.offGray};
 `;
 
 const CardBody = styled.div`

@@ -13,16 +13,16 @@ const TabsCustom = styled(Tabs)`
 
 const TabListCustom = styled(TabList)`
   max-width: 450px;
-  @media (max-width: ${({ theme }) => theme.phone}) {
+  @media (max-width: ${({ theme }) => theme.media.small}) {
     max-width: 60px;
   }
 `;
 
 const TabCustom = styled(Tab)`
-  color: ${({ theme }) => theme.accent};
+  color: ${({ theme }) => theme.colors.blueish};
   font-weight: bolder;
   &[aria-selected='true']:after {
-    border-right: 3px solid ${({ theme }) => theme.accent} !important;
+    border-right: 3px solid ${({ theme }) => theme.colors.blueish} !important;
   }
 `;
 
