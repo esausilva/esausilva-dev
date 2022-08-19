@@ -14,12 +14,8 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
  */
 const ProjectWrapper = styled.section`
   display: grid;
-  grid-template-columns: ${({ position }) =>
-    position === EVEN ? '300px auto' : 'auto 300px'};
-  grid-template-areas: ${({ position }) =>
-    position === EVEN
-      ? '"image desc" "stack stack"'
-      : '"desc image" "stack stack"'};
+  grid-template-columns: 1fr;
+  grid-template-areas: 'image' 'desc' 'stack';
   grid-template-rows: auto;
   grid-gap: 0.5em;
   margin-bottom: 1em;
@@ -34,9 +30,13 @@ const ProjectWrapper = styled.section`
     grid-area: stack;
     text-align: center;
   }
-  @media (max-width: ${({ theme }) => theme.media.small}) {
-    grid-template-columns: 1fr;
-    grid-template-areas: 'image' 'desc' 'stack';
+  @media (min-width: ${({ theme }) => theme.media.medium}) {
+    grid-template-columns: ${({ position }) =>
+      position === EVEN ? '300px auto' : 'auto 300px'};
+    grid-template-areas: ${({ position }) =>
+      position === EVEN
+        ? '"image desc" "stack stack"'
+        : '"desc image" "stack stack"'};
   }
 `;
 

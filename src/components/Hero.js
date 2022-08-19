@@ -40,21 +40,21 @@ const HeroContent = styled.section`
     line-height: 1.4;
   }
   h1 {
-    font-size: 3.6rem;
+    font-size: 2.9rem;
   }
   h2 {
     color: ${({ theme }) => theme.colors.sand};
-    font-size: 2.8rem;
+    font-size: 2.2rem;
   }
   div {
     text-align: center;
   }
-  @media (max-width: ${({ theme }) => theme.media.small}) {
+  @media (min-width: ${({ theme }) => theme.media.medium}) {
     h1 {
-      font-size: 2.9rem;
+      font-size: 3.6rem;
     }
     h2 {
-      font-size: 2.2rem;
+      font-size: 2.8rem;
     }
   }
 `;
@@ -64,9 +64,11 @@ const Avatar = styled(GatsbyImage)`
   border: 2px solid ${({ theme }) => theme.colors.sand};
   margin-bottom: 20px;
   align-self: center;
-  @media (max-width: ${({ theme }) => theme.media.small}) {
-    width: 130px !important;
-    height: 130px !important;
+  width: 130px;
+  height: 130px;
+  @media (min-width: ${({ theme }) => theme.media.medium}) {
+    width: initial;
+    height: initial;
   }
 `;
 

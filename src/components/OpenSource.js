@@ -12,9 +12,9 @@ const TabsCustom = styled(Tabs)`
 `;
 
 const TabListCustom = styled(TabList)`
-  max-width: 450px;
-  @media (max-width: ${({ theme }) => theme.media.small}) {
-    max-width: 60px;
+  max-width: 60px;
+  @media (min-width: ${({ theme }) => theme.media.medium}) {
+    max-width: 450px;
   }
 `;
 

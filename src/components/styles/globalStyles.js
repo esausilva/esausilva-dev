@@ -19,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
     height: 100%;
     color: ${theme.colors.matteBlack};
     letter-spacing: 0.07rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   p,
   h1,
@@ -32,6 +32,10 @@ export const GlobalStyles = createGlobalStyle`
   h2 {
     font-size: 2rem;
   }
+  p, 
+  h2 {
+      text-align: center;
+    }
   a {
     color: ${theme.colors.matteBlack};
     &:focus,
@@ -39,12 +43,13 @@ export const GlobalStyles = createGlobalStyle`
       color: ${lighten(0.5, theme.colors.matteBlack)}
     }
   }
-  @media (max-width: ${theme.media.small}) {
+  @media (min-width: ${theme.media.medium}) {
     body {
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
-    p, h2 {
-      text-align: center;
+    p, 
+    h2 {
+      text-align: left;
     }
   }
 `;

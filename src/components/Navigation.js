@@ -12,11 +12,11 @@ const Nav = styled.nav`
   position: sticky;
   top: 0px;
   background: ${({ theme }) => theme.colors.navyBlue};
-  height: 90px;
+  height: 60px;
   padding: 30px;
   z-index: 3;
-  @media (max-width: ${({ theme }) => theme.media.small}) {
-    height: 60px;
+  @media (min-width: ${({ theme }) => theme.media.medium}) {
+    height: 90px;
   }
 `;
 
@@ -24,25 +24,27 @@ const NameButton = styled.button`
   border: 2px solid ${({ theme }) => theme.colors.blueish};
   color: ${({ theme }) => theme.colors.blueish};
   padding: 3px;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   background: transparent;
   cursor: pointer;
-  @media (max-width: ${({ theme }) => theme.media.small}) {
-    font-size: 1.5rem;
+  @media (min-width: ${({ theme }) => theme.media.medium}) {
+    font-size: 1.8rem;
   }
 `;
 
 const MenuWrapper = styled.div`
-  @media (max-width: ${({ theme }) => theme.media.small}) {
-    position: fixed;
-    background: ${({ theme }) => theme.colors.navyBlue};
-    width: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 100%;
-    transform: translateX(0);
-    transition: transform 250ms;
+  position: fixed;
+  background: ${({ theme }) => theme.colors.navyBlue};
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 100%;
+  transform: translateX(0);
+  transition: transform 250ms;
+  @media (min-width: ${({ theme }) => theme.media.medium}) {
+    position: inherit;
+    width: auto;
   }
 `;
 
@@ -54,15 +56,19 @@ const Hamburger = styled.button`
   padding: 0.5em;
   margin-left: auto;
   font-size: 1.5em;
-  display: none;
-  @media (max-width: ${({ theme }) => theme.media.small}) {
-    display: inline-block;
+  display: inline-block;
+  @media (min-width: ${({ theme }) => theme.media.medium}) {
+    display: none;
   }
 `;
 
 const Menu = styled.ul`
   margin: 0;
+  height: 100%;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
   color: #fff;
   font-weight: 400;
   cursor: pointer;
@@ -70,6 +76,7 @@ const Menu = styled.ul`
     list-style: none;
     margin: 0;
     margin-left: 15px;
+    font-size: 3rem;
     &:after {
       display: block;
       content: '';
@@ -85,13 +92,11 @@ const Menu = styled.ul`
       text-decoration: none;
     }
   }
-  @media (max-width: ${({ theme }) => theme.media.small}) {
-    height: 100%;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
+  @media (min-width: ${({ theme }) => theme.media.medium}) {
+    height: auto;
+    flex-direction: row;
     li {
-      font-size: 3rem;
+      font-size: inherit;
     }
   }
 `;
@@ -105,9 +110,9 @@ const CloseMenu = styled.button`
   cursor: pointer;
   padding: 0.5em;
   position: absolute;
-  display: none;
-  @media (max-width: ${({ theme }) => theme.media.small}) {
-    display: inline-block;
+  display: inline-block;
+  @media (min-width: ${({ theme }) => theme.media.medium}) {
+    display: none;
   }
 `;
 

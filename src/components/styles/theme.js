@@ -11,6 +11,6 @@ export const theme = {
     offGray: '#D8D8D8',
   },
   media: {
-    small: '767px',
+    medium: '767px',
   },
 };

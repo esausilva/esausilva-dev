@@ -30,10 +30,11 @@ const Main = styled.main`
     text-transform: lowercase;
     margin: 0;
     font-weight: 300;
+    font-size: 3.8rem;
   }
-  @media (max-width: ${({ theme }) => theme.media.small}) {
+  @media (min-width: ${({ theme }) => theme.media.medium}) {
     h1 {
-      font-size: 3.8rem;
+      font-size: 4.8rem;
     }
   }
 `;
