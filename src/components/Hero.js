@@ -38,6 +38,7 @@ const HeroContent = styled.section`
   h2 {
     margin: 0;
     line-height: 1.4;
+    text-align: center;
   }
   h1 {
     font-size: 2.9rem;
@@ -45,9 +46,6 @@ const HeroContent = styled.section`
   h2 {
     color: ${({ theme }) => theme.colors.sand};
     font-size: 2.2rem;
-  }
-  div {
-    text-align: center;
   }
   @media (min-width: ${({ theme }) => theme.media.medium}) {
     h1 {
