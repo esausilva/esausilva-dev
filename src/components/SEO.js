@@ -7,10 +7,9 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, title, children }) {
   const { site, socialCard } = useStaticQuery(
     graphql`
       query {
@@ -19,6 +18,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            url
           }
         }
         socialCard: allFile(
@@ -35,82 +35,37 @@ function SEO({ description, lang, meta, title }) {
   );
 
   const metaDescription = description || site.siteMetadata.description;
+  const titleTemplate = `${title} | ${site.siteMetadata.title}`;
+  const socialCardUrl = `${site.siteMetadata.url}${socialCard.edges[0].node.publicURL}`;
 
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          property: `og:url`,
-          content: `https://www.esausilva.dev`,
-        },
-        {
-          property: `og:image`,
-          content: `https://www.esausilva.dev${socialCard.edges[0].node.publicURL}`,
-        },
-        {
-          property: `og:image:width`,
-          content: `1200`,
-        },
-        {
-          property: `og:image:height`,
-          content: `630`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:image`,
-          content: `https://www.esausilva.dev${socialCard.edges[0].node.publicURL}`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ].concat(meta)}
-    />
+    <>
+      <title>{titleTemplate}</title>
+      <meta name="description" content={metaDescription} />
+      <meta name="image" content={socialCardUrl} />
+      <meta name="og:title" content={titleTemplate} />
+      <meta name="og:description" content={metaDescription} />
+      <meta name="og:type" content="website" />
+      <meta name="og:url" content={site.siteMetadata.url} />
+      <meta name="og:image" content={socialCardUrl} />
+      <meta name="og:image:width" content="1200" />
+      <meta name="og:image:height" content="630" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content={socialCardUrl} />
+      <meta name="twitter:creator" content={site.siteMetadata.author} />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={metaDescription} />
+      {children}
+    </>
   );
 }
 
 SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
   description: ``,
 };
 
 SEO.propTypes = {
   description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
 };
 

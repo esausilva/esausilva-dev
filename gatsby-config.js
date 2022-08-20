@@ -3,11 +3,11 @@ require('dotenv').config();
 module.exports = {
   siteMetadata: {
     title: `Full-Stack Software Engineer`,
-    description: `Hello, I'm Esau Silva Full-Stack Software Engineer and avid Brazilian Jiu-Jitsu practitioner. Find out about my work as a Software Engineer.`,
+    description: `Hello, my name is Esau Silva. Experienced Full-Stack Software Engineer working with the .NET stack and React.`,
     author: `@_esausilva`,
+    url: `https://www.esausilva.dev`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
