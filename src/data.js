@@ -16,14 +16,6 @@ export const stackFrontEnd = [
     src: 'styled-components.png',
   },
   {
-    text: 'GraphQL *',
-    src: 'graphql.png',
-  },
-  {
-    text: 'Next.js *',
-    src: 'next-js.png',
-  },
-  {
     text: 'CSS3',
     src: 'css3.png',
   },
@@ -39,6 +31,10 @@ export const stackFrontEnd = [
     text: 'Flexbox',
     src: 'flexbox.png',
   },
+  {
+    text: 'GraphQL *',
+    src: 'graphql.png',
+  },
 ];
 
 export const stackBackEnd = [
@@ -53,10 +49,6 @@ export const stackBackEnd = [
   {
     text: '.NET Framework',
     src: 'net-framework.png',
-  },
-  {
-    text: 'Express.js *',
-    src: 'express-js.png',
   },
   {
     text: 'NServiceBus',

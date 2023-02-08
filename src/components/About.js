@@ -62,15 +62,23 @@ const About = () => {
         engineer on the .NET Stack.
       </p>
       <p>
-        I build microservices and APIs for my current employer, a company in the
-        FinTech space. We build on top of an event-driven architecture using
-        NServiceBus as our messaging platform. Fully automated deployments
-        (CI/CD) with Azure DevOps.
+        I build microservices and APIs for my current employer,{' '}
+        <a
+          href="https://www.linkedin.com/company/ingomoney.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Ingo Money
+        </a>{' '}
+        - a company in the FinTech space. We build on top of an event-driven
+        architecture using NServiceBus as our messaging platform. Fully
+        automated deployments (CI/CD) with Azure DevOps.
       </p>
       <p>
-        On my current role, I lead the development of one of our newest product
-        offerings. I collaborate internally with multiple teams, as well as
-        externally with clients and their development teams.
+        On my current role, I lead the development of our latest Check Risk
+        Management product, a B2B API to provide near real-time check deposit
+        underwriting. I also collaborate internally with multiple teams, as well
+        as externally with clients and their development teams.
       </p>
       <p>
         Outside of being an engineer, I love hiking with my wife and son. I

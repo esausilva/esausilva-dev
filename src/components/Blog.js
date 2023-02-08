@@ -34,18 +34,14 @@ const Blog = () => {
       <Ul>
         {blogEntires.esausilva.map(({ title, url }) => (
           <li key={url}>
-            <a href={url} target="_blank" rel="noopener noreferrer">
+            <a href={url} target="_blank">
               {title}
             </a>
           </li>
         ))}
       </Ul>
       <More>
-        <a
-          href="https://esausilva.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://esausilva.com/" target="_blank">
           See More
         </a>
       </More>
