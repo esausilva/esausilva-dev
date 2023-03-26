@@ -115,9 +115,9 @@ export const portfolio = [
   {
     project: 'OmniTrack',
     stack:
-      '.NET Framework | C# | SQL Server | Stored Procedures | T SQL | jQuery | Razor Pages | Bootstrap | Less',
+      '.NET Core | C# | SQL Server | Stored Procedures | T SQL | jQuery | Razor Pages | Bootstrap | Less',
     description:
-      'Event management software used by Region One ESC and teachers from 27 school districts throughout South Texas. This software was developed to help educators keep track of their professional development hours required by the State of Texas as well as for education administrators to create and manage the entire lifecycle of a workshop, including the management of meeting rooms, registrations, certification assignment, online check-ins for participants, among many other features.|This is a multi-tenant SaaS application where each tenant (organization) has users belonging to their respective tenant.|I collaborated with another engineer in migrating the software from the older ASP.NET Web Forms to the newer (at that time) ASP.NET MVC -- .NET Framework. While migrating the software, we adapted it to support multi-tenancy (SaaS model) and added many new features and enhancements.',
+      'Event management software used by Region One ESC and teachers from 27 school districts throughout South Texas. This software was developed to help educators keep track of their professional development hours required by the State of Texas as well as for education administrators to create and manage the entire lifecycle of a workshop, including the management of meeting rooms, registrations, certification assignment, online check-ins for participants, among many other features.|This is a multi-tenant SaaS application where each tenant (organization) has users belonging to their respective tenant.|I collaborated with another engineer in migrating the software from the older ASP.NET Web Forms to the newer (at that time) ASP.NET MVC -- .NET Core. While migrating the software, we adapted it to support multi-tenancy (SaaS model) and added many new features and enhancements.',
     images: [
       'portfolio/OmniTrack1.png',
       'portfolio/OmniTrack2.png',
