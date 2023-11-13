@@ -12,6 +12,14 @@ export const stackFrontEnd = [
     src: 'gatsby-js.png',
   },
   {
+    text: 'Next.js *',
+    src: 'next-js.png',
+  },
+  {
+    text: 'TypeScript *',
+    src: 'typescript.png',
+  },
+  {
     text: 'Styled Components',
     src: 'styled-components.png',
   },
@@ -31,10 +39,10 @@ export const stackFrontEnd = [
     text: 'Flexbox',
     src: 'flexbox.png',
   },
-  {
-    text: 'GraphQL *',
-    src: 'graphql.png',
-  },
+  // {
+  //   text: 'GraphQL *',
+  //   src: 'graphql.png',
+  // },
 ];
 
 export const stackBackEnd = [
@@ -53,6 +61,10 @@ export const stackBackEnd = [
   {
     text: 'NServiceBus',
     src: 'particular-software.png',
+  },
+  {
+    text: 'GraphQL *',
+    src: 'graphql.png',
   },
 ];
 
@@ -223,6 +235,13 @@ export const openSource = [
     link: 'https://github.com/esausilva/andrea-silva-design',
   },
   {
+    project: 'Hot Chocolate GraphQL Workshop Final Solution Updated',
+    stack: '.NET Core | GraphQL | HotChocolate',
+    description:
+      'Updated the solution to the outdated official Hot Chocolate GraphQL Workshop.',
+    link: 'https://github.com/esausilva/hot-chocolate-graphql-workshop-updated',
+  },
+  {
     project: 'react-starter-boilerplate-hmr',
     stack: 'React | Webpack | React Router | Semantic UI',
     description:
@@ -262,6 +281,15 @@ export const openSource = [
 export const blogEntires = {
   esausilva: [
     {
+      title: '.NET Core Options Pattern For Live Reload Settings',
+      url: 'https://esausilva.com/2023/11/10/net-core-options-pattern-live-reload-settings-ioptionsmonitor/',
+    },
+    {
+      title:
+        'Solved: GraphQL and Hot Chocolate Workshop issues with the latest versions of Hot Chocolate and .NET Top-Level Statements',
+      url: 'https://esausilva.com/2023/04/12/solved-graphql-hot-chocolate-workshop-issues-updated/',
+    },
+    {
       title: 'Create a React Custom Lightbox Gallery',
       url: 'https://esausilva.com/2021/09/07/create-a-react-custom-lightbox-gallery/',
     },
@@ -280,10 +308,6 @@ export const blogEntires = {
     {
       title: 'Char, Word, Sentence and Paragraph Counter JavaScript and React',
       url: 'https://esausilva.com/2017/08/26/character-word-sentence-paragraph-counter-in-vanilla-javascript-and-react/',
-    },
-    {
-      title: 'Quickly Set Up a Node ExpressJS Server to Serve a Static Site',
-      url: 'https://esausilva.com/2017/05/18/quickly-set-up-a-node-expressjs-server-to-serve-a-static-site/',
     },
     {
       title:
