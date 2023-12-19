@@ -281,8 +281,16 @@ export const openSource = [
 export const blogEntires = {
   esausilva: [
     {
+      title: 'Run Load (Performance) Testing with Postman',
+      url: 'https://esausilva.com/2023/12/17/run-load-performance-testing-with-postman/',
+    },
+    {
       title: '.NET Core Options Pattern For Live Reload Settings',
       url: 'https://esausilva.com/2023/11/10/net-core-options-pattern-live-reload-settings-ioptionsmonitor/',
+    },
+    {
+      title: 'Configure CORS in .NET',
+      url: 'https://esausilva.com/2023/12/04/configure-cors-in-net/',
     },
     {
       title:
@@ -304,15 +312,6 @@ export const blogEntires = {
     {
       title: 'Compile Sass Files in Visual Studio and Webpack',
       url: 'https://esausilva.com/2018/08/30/compile-sass-files-visual-studio-webpack/',
-    },
-    {
-      title: 'Char, Word, Sentence and Paragraph Counter JavaScript and React',
-      url: 'https://esausilva.com/2017/08/26/character-word-sentence-paragraph-counter-in-vanilla-javascript-and-react/',
-    },
-    {
-      title:
-        'Calling Instructure Canvas LMS API in C# ASP.NET MVC Using RestSharp',
-      url: 'https://esausilva.com/2017/02/14/calling-instructure-canvas-lms-api-in-c-sharp-asp-net-mvc-using-restsharp/',
     },
   ],
   medium: [
