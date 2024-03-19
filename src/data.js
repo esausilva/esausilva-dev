@@ -39,10 +39,6 @@ export const stackFrontEnd = [
     text: 'Flexbox',
     src: 'flexbox.png',
   },
-  // {
-  //   text: 'GraphQL *',
-  //   src: 'graphql.png',
-  // },
 ];
 
 export const stackBackEnd = [
@@ -281,6 +277,23 @@ export const openSource = [
 export const blogEntires = {
   esausilva: [
     {
+      title: 'Postman Tips for Better API Testing',
+      url: 'https://esausilva.com/2024/03/04/postman-tips-for-better-api-testing/',
+    },
+    {
+      title: 'Calling and Authenticated API from Next.js Server Side',
+      url: 'https://esausilva.com/2024/02/12/calling-and-authenticated-api-from-next-js-server-side/',
+    },
+    {
+      title: 'Mocking External APIs or services in .NET',
+      url: 'https://esausilva.com/2024/01/29/mocking-external-apis-or-services-in-dot-net/',
+    },
+    {
+      title:
+        '.NET Global Exception Handler to Return Problem Details For Your APIs',
+      url: 'https://esausilva.com/2023/12/28/net-global-exception-handler-to-return-problem-details-for-your-apis/',
+    },
+    {
       title: 'Run Load (Performance) Testing with Postman',
       url: 'https://esausilva.com/2023/12/17/run-load-performance-testing-with-postman/',
     },
@@ -308,10 +321,6 @@ export const blogEntires = {
     {
       title: 'React Hook to play a video with Intersection Observer',
       url: 'https://esausilva.com/2021/06/14/react-hook-to-play-video-using-intersection-observer/',
-    },
-    {
-      title: 'Compile Sass Files in Visual Studio and Webpack',
-      url: 'https://esausilva.com/2018/08/30/compile-sass-files-visual-studio-webpack/',
     },
   ],
   medium: [
