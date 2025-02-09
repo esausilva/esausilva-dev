@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { useStaticQuery, graphql } from 'gatsby';
 
-const ImgFixed = ({ src, alt, height, width }) => {
+const ImgFixed = ({ src, alt, height = 60, width = 60 }) => {
   const { allImageSharp } = useStaticQuery(graphql`
     query {
       allImageSharp {
@@ -36,11 +36,6 @@ ImgFixed.propTypes = {
   alt: PropTypes.string.isRequired,
   height: PropTypes.number,
   width: PropTypes.number,
-};
-
-ImgFixed.defaultProps = {
-  height: 60,
-  width: 60,
 };
 
 export { ImgFixed };

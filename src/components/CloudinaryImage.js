@@ -3,7 +3,12 @@ import PropTypes from 'prop-types';
 
 import 'lazysizes';
 
-const CloudinaryImage = ({ alt, title, relativePath, transformations }) => {
+const CloudinaryImage = ({
+  alt,
+  relativePath,
+  title = '',
+  transformations = '',
+}) => {
   return (
     <img
       src={`https://res.cloudinary.com/${process.env.GATSBY_CLOUDINARY_USER}/image/upload/e_blur:1500,f_auto,q_40${transformations}/esausilva-dev/${relativePath}`}
@@ -21,11 +26,6 @@ CloudinaryImage.propTypes = {
   title: PropTypes.string,
   relativePath: PropTypes.string.isRequired,
   transformations: PropTypes.string,
-};
-
-CloudinaryImage.defaultProps = {
-  title: '',
-  transformations: '',
 };
 
 export { CloudinaryImage };

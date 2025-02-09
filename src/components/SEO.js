@@ -9,30 +9,28 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
-function SEO({ description, title, children }) {
-  const { site, socialCard } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-            url
-          }
+function SEO({ title, children, description = '' }) {
+  const { site, socialCard } = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          description
+          author
+          url
         }
-        socialCard: allFile(
-          filter: { name: { regex: "/esau-silva-social-card/" } }
-        ) {
-          edges {
-            node {
-              publicURL
-            }
+      }
+      socialCard: allFile(
+        filter: { name: { regex: "/esau-silva-social-card/" } }
+      ) {
+        edges {
+          node {
+            publicURL
           }
         }
       }
-    `,
-  );
+    }
+  `);
 
   const metaDescription = description || site.siteMetadata.description;
   const titleTemplate = `${title} | ${site.siteMetadata.title}`;
@@ -59,10 +57,6 @@ function SEO({ description, title, children }) {
     </>
   );
 }
-
-SEO.defaultProps = {
-  description: ``,
-};
 
 SEO.propTypes = {
   description: PropTypes.string,
