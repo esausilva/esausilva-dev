@@ -16,7 +16,7 @@
     "gatsby-plugin-image": "^3.12.3",
     "gatsby-plugin-manifest": "^5.12.3",
     "gatsby-plugin-offline": "^6.12.3",
-    "gatsby-plugin-sharp": "^5.12.3",
+    "gatsby-plugin-sharp": "^5.14.0",
     "gatsby-plugin-styled-components": "^6.12.0",
     "gatsby-plugin-typography": "^5.12.0",
     "gatsby-source-filesystem": "^5.12.1",
@@ -24,9 +24,8 @@
     "lazysizes": "^5.3.2",
     "polished": "^4.2.2",
     "prop-types": "^15.8.1",
-    "react": "^18.2.0",
+    "react": "^18.3.1",
     "react-dom": "^18.2.0",
-    "react-pose": "^4.0.10",
     "react-responsive-carousel": "^3.2.23",
     "react-scroll": "^1.9.0",
     "react-typing-animation": "^1.6.2",
@@ -36,9 +35,8 @@
     "typography": "^0.16.21"
   },
   "devDependencies": {
-    "npm-run-all": "^4.1.5",
     "prettier": "^3.1.0",
-    "rimraf": "^5.0.5"
+    "rimraf": "^6.0.1"
   },
   "keywords": [
     "developer portfolio",
@@ -51,7 +49,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop -H 0.0.0.0 -o",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm-run-all -s clean develop",
+    "start": "npm run clean && npm run develop",
     "serve": "gatsby serve",
     "clean": "rimraf .cache public",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",

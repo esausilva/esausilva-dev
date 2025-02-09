@@ -1,21 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import posed from 'react-pose';
 import Typing from 'react-typing-animation';
 import { useStaticQuery, graphql } from 'gatsby';
 import { Link } from 'react-scroll';
-
-/**
- * Animations
- */
-const moreAnimation = posed.div({
-  hoverable: true,
-  pressable: true,
-  init: { scale: 1 },
-  hover: { scale: 1.2 },
-  press: { scale: 1.1 },
-});
 
 /**
  * Styled Components
@@ -70,11 +58,15 @@ const Avatar = styled(GatsbyImage)`
   }
 `;
 
-const More = styled(moreAnimation)`
+const More = styled.div`
   margin-top: 40px;
   cursor: pointer;
   img {
     margin: 0;
+  }
+  :hover {
+    background: ${({ theme }) => theme.colors.sand};
+    border-radius: 50%;
   }
 `;
 
