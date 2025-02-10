@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import styled from 'styled-components';
+import Typed from 'typed.js';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import Typing from 'react-typing-animation';
 import { useStaticQuery, graphql } from 'gatsby';
 import { Link } from 'react-scroll';
 
@@ -90,15 +90,27 @@ const Hero = () => {
   `);
   const avatarImage = getImage(images.avatar);
   const moreArrowImage = getImage(images.more);
+  const titleRef = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(titleRef.current, {
+      strings: [
+        '<h1>Hello there! I’m Esau Silva</h1> ^1000\n <h2>Full-Stack Software Engineer</h2>',
+      ],
+      typeSpeed: 50,
+      showCursor: false,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
 
   return (
     <Header>
       <HeroContent>
         <Avatar image={avatarImage} alt="Esau Silva Photo" />
-        <Typing speed={40}>
-          <h1>Hello there! I’m Esau Silva</h1>
-          <h2>Full-Stack Software Engineer</h2>
-        </Typing>
+        <div ref={titleRef}></div>
         <More>
           <Link to="navigation" spy={true} smooth={true} duration={600}>
             <GatsbyImage image={moreArrowImage} alt="See More" />
