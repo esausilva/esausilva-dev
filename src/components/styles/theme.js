@@ -9,6 +9,7 @@ export const theme = {
     blueish: '#18607B',
     sand: '#9D9587',
     offGray: '#D8D8D8',
+    tabBg: '#EFEFEF',
   },
   media: {
     medium: '767px',
