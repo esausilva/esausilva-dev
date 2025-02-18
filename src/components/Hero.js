@@ -95,7 +95,7 @@ const Hero = () => {
   useEffect(() => {
     const typed = new Typed(titleRef.current, {
       strings: [
-        '<h1>Hello there! I’m Esau Silva</h1> ^1000\n <h2>Full-Stack Software Engineer</h2>',
+        '<h1>Hello there! I’m Esau Silva</h1> \n <h2>Full-Stack Software Engineer</h2>',
       ],
       typeSpeed: 50,
       showCursor: false,

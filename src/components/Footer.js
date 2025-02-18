@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faTwitter,
+  faBluesky,
   faGithub,
   faLinkedin,
   faXTwitter,
@@ -45,12 +45,12 @@ const Footer = () => {
         <span>Let's get connected</span>
         <SocialIcons>
           <a
-            href="https://x.com/_esausilva"
+            href="https://bsky.app/profile/esausilva.bsky.social"
             target="_blank"
             rel="noopener noreferrer"
-            title="X"
+            title="Bluesky"
           >
-            <FontAwesomeIcon icon={faXTwitter} />
+            <FontAwesomeIcon icon={faBluesky} />
           </a>
           <a
             href="https://github.com/esausilva"
@@ -75,6 +75,14 @@ const Footer = () => {
             title="Personal Blog"
           >
             <FontAwesomeIcon icon={faBlog} />
+          </a>
+          <a
+            href="https://x.com/_esausilva"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="X"
+          >
+            <FontAwesomeIcon icon={faXTwitter} />
           </a>
         </SocialIcons>
       </section>
