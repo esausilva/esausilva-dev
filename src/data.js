@@ -265,13 +265,6 @@ export const openSource = [
       '.NET Core MVC base project with support for Sass using Webpack that includes minification and autoprefixing CSS for production.',
     link: 'https://github.com/esausilva/netcore-sass-webpack',
   },
-  {
-    project: 'React Production Deployment',
-    stack: 'React | Heroku | Netlify | Now.sh',
-    description:
-      'The repo contains examples on how to deploy your React application to Netlify, Now and Heroku.',
-    link: 'https://github.com/esausilva/react-production-deployment',
-  },
 ];
 
 export const blogEntires = {
