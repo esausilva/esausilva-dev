@@ -88,14 +88,14 @@ export const stackOther = [
     text: 'Webpack',
     src: 'webpack.png',
   },
-  {
-    text: 'npm',
-    src: 'npm.png',
-  },
-  {
-    text: 'Yarn',
-    src: 'yarn.png',
-  },
+  // {
+  //   text: 'npm',
+  //   src: 'npm.png',
+  // },
+  // {
+  //   text: 'Yarn',
+  //   src: 'yarn.png',
+  // },
   {
     text: 'Git',
     src: 'git.png',
@@ -269,6 +269,14 @@ export const openSource = [
 
 export const blogEntires = {
   esausilva: [
+    {
+      title: 'Issues Deploying Docker Images to Synology Container Manager',
+      url: 'https://esausilva.com/2025/02/28/issues-deploying-docker-images-to-synology-container-manager/',
+    },
+    {
+      title: 'Implementing Idempotency in .NET Core',
+      url: 'https://esausilva.com/2025/01/05/implementing-idempotency-in-net-core/',
+    },
     {
       title: 'Postman Tips for Better API Testing',
       url: 'https://esausilva.com/2024/03/04/postman-tips-for-better-api-testing/',

@@ -59,32 +59,33 @@ const About = () => {
       </HeadingWrapper>
       <p>
         Experienced Full-Stack Software Engineer currently working as a back-end
-        engineer on the .NET Stack.
+        engineer within the .NET ecosystem.
       </p>
       <p>
         I build microservices and APIs for my current employer,{' '}
         <a
-          href="https://www.linkedin.com/company/ingomoney.com"
+          href="https://www.linkedin.com/company/ingopayments"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Ingo Money
+          Ingo Payments
         </a>{' '}
         - a company in the FinTech space. We build on top of an event-driven
         architecture using NServiceBus as our messaging platform. Fully
         automated deployments (CI/CD) with Azure DevOps.
       </p>
       <p>
-        On my current role, I lead the development of our latest Check Risk
+        On my current role, I lead the development of Ingo's Check Risk
         Management product, a B2B API to provide near real-time check deposit
-        underwriting. I also collaborate internally with multiple teams, as well
-        as externally with clients and their development teams.
+        underwriting. I collaborate internally with multiple teams and help with
+        new feature development and maintenance for one of Ingo's payments SaaS
+        products.
       </p>
       <p>
-        Outside of being an engineer, I love hiking with my wife and son. I
-        trained in Brazilian Jiu-Jitsu for 5 years, which I hope to pick up
-        again, I love learning new technologies and be challenged with
-        interesting problems that can be solved with technology.
+        Outside of being an engineer, I love hiking and camping with my wife and
+        children. I trained in Brazilian Jiu-Jitsu for 5 years, which I hope to
+        pick up again. I love learning new technologies and be challenged with
+        interesting problems.
       </p>
       <p>Below some of the technologies I am familiar with.</p>
 
