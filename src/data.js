@@ -217,6 +217,13 @@ export const wip = [
 
 export const openSource = [
   {
+    project: 'Synology API SDK',
+    stack: 'C# | .NET Core',
+    description:
+      'This is a .NET Core library that allows you to interact with the Synology NAS API. It includes the implementation of the different API endpoints and the necessary classes to interact with the API.',
+    link: 'https://github.com/esausilva/synology-api-sdk',
+  },
+  {
     project: 'EsauSilva.dev',
     stack: 'React | GatsbyJS | Styled Components | CSS Grid | Flexbox',
     description:
@@ -238,6 +245,13 @@ export const openSource = [
     link: 'https://github.com/esausilva/hot-chocolate-graphql-workshop-updated',
   },
   {
+    project: 'Process Video Files For Synology Photos',
+    stack: 'Shell Scripts | Bash',
+    description:
+      'Transcode HEVC (H.265) to H.264 video files for Synology Photos and fix timestamps',
+    link: 'https://github.com/esausilva/process-videos-synology',
+  },
+  {
     project: 'react-starter-boilerplate-hmr',
     stack: 'React | Webpack | React Router | Semantic UI',
     description:
@@ -250,13 +264,6 @@ export const openSource = [
     description:
       'The project includes the implementation of FullCalendar in JavaScript ES6+ and comes wired with the necessary database access layer (including SQL statements) to interact with SQL Server.',
     link: 'https://github.com/esausilva/fullcalendar-aspnet-core',
-  },
-  {
-    project: 'Getting Started with Vue.js in .NET Core',
-    stack: '.NET Core | Vue.js | Webpack | Sass',
-    description:
-      'This is the project source files for my tutorial on using Vue.js with .NET Core and Razor Pages.',
-    link: 'https://github.com/esausilva/vuejs-aspnet-core',
   },
   {
     project: 'Compile Sass Files in Visual Studio and Webpack',
