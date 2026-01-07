@@ -31,10 +31,10 @@ const ProjectWrapper = styled.section`
     text-align: center;
   }
   @media (min-width: ${({ theme }) => theme.media.medium}) {
-    grid-template-columns: ${({ position }) =>
-      position === EVEN ? '300px auto' : 'auto 300px'};
-    grid-template-areas: ${({ position }) =>
-      position === EVEN
+    grid-template-columns: ${({ $position }) =>
+      $position === EVEN ? '300px auto' : 'auto 300px'};
+    grid-template-areas: ${({ $position }) =>
+      $position === EVEN
         ? '"image desc" "stack stack"'
         : '"desc image" "stack stack"'};
   }
@@ -44,7 +44,7 @@ const ProjectWrapper = styled.section`
  * Component
  */
 const Project = ({ project, stack, description, images, style }) => (
-  <ProjectWrapper position={style}>
+  <ProjectWrapper $position={style}>
     <div>
       <Carousel
         showArrows
