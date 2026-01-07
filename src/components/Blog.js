@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { HeadingWrapper } from './styles/HeadingWrapper';
-import { blogEntires } from '../data';
+import { blogEntries } from '../data';
 
 /**
  * Styled Components
@@ -32,7 +32,7 @@ const Blog = () => {
 
       <h2>EsauSilva.com</h2>
       <Ul>
-        {blogEntires.esausilva.map(({ title, url }) => (
+        {blogEntries.esausilva.map(({ title, url }) => (
           <li key={url}>
             <a href={url} target="_blank">
               {title}
@@ -48,7 +48,7 @@ const Blog = () => {
 
       <h2>Medium.com</h2>
       <Ul>
-        {blogEntires.medium.map(({ title, url }) => (
+        {blogEntries.medium.map(({ title, url }) => (
           <li key={url}>
             <a href={url} target="_blank" rel="noopener noreferrer">
               {title}
@@ -68,7 +68,7 @@ const Blog = () => {
 
       <h2>Newline</h2>
       <Ul>
-        {blogEntires.newline.map(({ title, url }) => (
+        {blogEntries.newline.map(({ title, url }) => (
           <li key={url}>
             <a href={url} target="_blank" rel="noopener noreferrer">
               {title}
@@ -77,11 +77,11 @@ const Blog = () => {
         ))}
       </Ul>
 
-      {blogEntires.upcoming.length > 0 ? (
+      {blogEntries.upcoming.length > 0 ? (
         <>
           <h2>Upcoming</h2>
           <Ul>
-            {blogEntires.upcoming.map(({ title, description }) => (
+            {blogEntries.upcoming.map(({ title, description }) => (
               <li key={title}>
                 {title}
                 {description === '' ? null : (

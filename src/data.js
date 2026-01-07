@@ -224,6 +224,20 @@ export const openSource = [
     link: 'https://github.com/esausilva/synology-api-sdk',
   },
   {
+    project: 'Synology Photos Slideshow API',
+    stack: 'C# | .NET Core',
+    description:
+      'An API to randomly fetch and serve images from Synology NAS devices, optimized for use in slideshow applications.',
+    link: 'https://github.com/esausilva/synology-photos-slideshow-api',
+  },
+  {
+    project: 'Synology Photos Slideshow Client',
+    stack: 'React | TanStack Start | TypeScript | Biome | Nitro',
+    description:
+      'A web application designed to display image slideshows sourced from a Synology NAS. Built to pair seamlessly with my Synology Photos Slideshow API.',
+    link: 'https://github.com/esausilva/synology-photos-slideshow-client',
+  },
+  {
     project: 'EsauSilva.dev',
     stack: 'React | GatsbyJS | Styled Components | CSS Grid | Flexbox',
     description:
@@ -251,31 +265,15 @@ export const openSource = [
       'Transcode HEVC (H.265) to H.264 video files for Synology Photos and fix timestamps',
     link: 'https://github.com/esausilva/process-videos-synology',
   },
-  {
-    project: 'react-starter-boilerplate-hmr',
-    stack: 'React | Webpack | React Router | Semantic UI',
-    description:
-      'React Starter Boilerplate with Hot Module Replacement and Webpack 4.',
-    link: 'https://github.com/esausilva/react-starter-boilerplate-hmr',
-  },
-  {
-    project: 'FullCalendar .NET Core',
-    stack: '.NET Core | SQL Server | SQL | jQuery | Webpack | Sass',
-    description:
-      'The project includes the implementation of FullCalendar in JavaScript ES6+ and comes wired with the necessary database access layer (including SQL statements) to interact with SQL Server.',
-    link: 'https://github.com/esausilva/fullcalendar-aspnet-core',
-  },
-  {
-    project: 'Compile Sass Files in Visual Studio and Webpack',
-    stack: '.NET Core | Webpack | Sass',
-    description:
-      '.NET Core MVC base project with support for Sass using Webpack that includes minification and autoprefixing CSS for production.',
-    link: 'https://github.com/esausilva/netcore-sass-webpack',
-  },
 ];
 
-export const blogEntires = {
+export const blogEntries = {
   esausilva: [
+    {
+      title:
+        'Publish NuGet Packages with GitHub Actions Automation: A Beginner’s Guide',
+      url: 'https://esausilva.com/2025/06/11/publish-nuget-packages-with-github-actions/',
+    },
     {
       title: 'Issues Deploying Docker Images to Synology Container Manager',
       url: 'https://esausilva.com/2025/02/28/issues-deploying-docker-images-to-synology-container-manager/',

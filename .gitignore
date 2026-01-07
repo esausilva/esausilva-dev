@@ -72,3 +72,5 @@ yarn-error.log
 _misc/
 src/images/portfolio/*
 !src/images/portfolio/.gitkeep
+
+.idea/
