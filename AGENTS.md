@@ -8,7 +8,7 @@ This is a Software Engineer Portfolio for Esau Silva. It is built as a static si
 
 ## Technology Stack
 
-- **Framework**: Gatsby (v5.16) / React (v19.2)
+- **Framework**: Gatsby (v5.16) / React (v18)
 - **Styling**: `styled-components` (v6.4) (with `polished` for helper functions)
 - **Typography**: `typography.js` (integrated via `gatsby-plugin-typography`)
 - **Icons**: FontAwesome (v7.2) (`@fortawesome/react-fontawesome` v3.3)
