@@ -8,13 +8,13 @@ This is a Software Engineer Portfolio for Esau Silva. It is built as a static si
 
 ## Technology Stack
 
-- **Framework**: Gatsby (v5) / React (v18)
-- **Styling**: `styled-components` (with `polished` for helper functions)
+- **Framework**: Gatsby (v5.16) / React (v19.2)
+- **Styling**: `styled-components` (v6.4) (with `polished` for helper functions)
 - **Typography**: `typography.js` (integrated via `gatsby-plugin-typography`)
-- **Icons**: FontAwesome (`@fortawesome/react-fontawesome`)
+- **Icons**: FontAwesome (v7.2) (`@fortawesome/react-fontawesome` v3.3)
 - **Images**: `gatsby-plugin-image`, `gatsby-plugin-sharp`, `gatsby-transformer-sharp` (with `lazysizes` for lazy loading)
-- **Animations/Interactions**: `typed.js` (typing animations), `react-scroll` (smooth scrolling), `react-responsive-carousel` (carousels)
-- **Formatting**: Prettier (`prettier`, `prettier.config.js`)
+- **Animations/Interactions**: `typed.js` (v3.0) (typing animations), `react-scroll` (smooth scrolling), `react-responsive-carousel` (carousels)
+- **Formatting**: Prettier (v3.8) (`prettier`, `prettier.config.js`)
 
 ## Project Structure
 
